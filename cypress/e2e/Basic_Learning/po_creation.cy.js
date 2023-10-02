@@ -2,17 +2,17 @@ describe("PO Creation", function(){
 
     it("visit", function(){
 
-        cy.visit('http://192.168.3.187:7071/web/login')
-        cy.get('#login').type('qa_user')
-        cy.get('#password').type('1234')
+        cy.visit('http://192.168.3.187:7071/web/login')     //url 
+        cy.get('#login').type('qa_user')       // user input
+        cy.get('#password').type('1234')       // password input
         // cy.wait(2000)
-         cy.get('.btn').click()
-         cy.get('.dropdown-toggle > .oi').click()
+         cy.get('.btn').click()                // loggin button click
+         cy.get('.dropdown-toggle > .oi').click()               
          cy.get('[href="#menu_id=437&action=575"]').click()
          cy.wait(2000)
-         cy.get('.btn-primary').click()
+         cy.get('.btn-primary').click()        // PR New button 
          cy.wait(2000)
-         cy.get('#budget_id').click()
+         cy.get('#budget_id').click()          // budget
          cy.wait(2000)
          cy.get('#budget_id').type('{enter}')
          cy.get('#priority').select('High')

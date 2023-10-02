@@ -1,0 +1,355 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Labels,Description,Environment,Watchers,Watchers,Watchers,Watchers,Watchers Id,Watchers Id,Watchers Id,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Relates),Outward issue link (Relates),Attachment,Attachment,Attachment,Custom field (Atlas project key),Custom field (Atlas project status),Custom field (Category),Custom field (Change completion date),Custom field (Change reason),Custom field (Change risk),Custom field (Change start date),Custom field (Change type),Custom field (Compass),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Rank),Custom field (Request Type),Custom field (Request participants),Satisfaction rating,Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field ([CHART] Date of First Response),Comment,Comment,Comment,Comment,Comment,Comment,Comment,Status Category
+[Asset_Transfer]: Search not work in Asset Transfer page ,MOI-203,16795,Bug,To Do,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Medium,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,10/Jul/23 12:31 PM,10/Jul/23 12:31 PM,25/Jul/23 11:20 AM,,,0,Asset_Management_Issues,"Search not work by any value 
+
+!Assets Transfer - MiME - Google Chrome 2023-07-10 12-28-50.mp4|width=1920,height=1160!",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,10/Jul/23 12:31 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Assets Transfer - MiME - Google Chrome 2023-07-10 12-28-50.mp4;https://digicontc.atlassian.net/rest/api/3/attachment/content/16867,,,,,,,,,,,,{},,,,,,,,2|i000kv:,,,,,,,,,,,,,,,,,,,,To Do
+[Asset_Transfer]: Print button need to removed from all the pages from Assets Management module,MOI-202,16794,Bug,To Do,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Medium,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,10/Jul/23 12:21 PM,10/Jul/23 12:25 PM,11/Jul/23 11:14 AM,,,0,Asset_Management_Issues,"Please remove from the mention SS pages 
+
+Steps:
+
+Asset Transfer > Click to select transfer request > Observe 
+
+!image-20230710-061820.png|width=1426,height=516!
+
+Asset Transfer
+
+!image-20230710-062356.png|width=1423,height=477!
+
+Asset Pool
+
+!image-20230710-062433.png|width=1437,height=342!
+
+Assets without FAMIS ",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,10/Jul/23 12:21 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230710-061820.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16864,10/Jul/23 12:25 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230710-062356.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16866,10/Jul/23 12:25 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230710-062433.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16865,,,,,,,,,,{},,,,,,,,2|i000kn:,,,,,,,,,,,,,,,,,,,,To Do
+[Asset_Transfer]: Odoo client error found randomly after login with credential  ,MOI-201,16792,Bug,Issue Found,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Medium,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,10/Jul/23 9:30 AM,10/Jul/23 10:07 AM,11/Jul/23 11:14 AM,,,0,Asset_Management_Issues,"Odoo client error found randomly after login 
+
+Steps:
+
+Login with valid credential > Click Inventory menu > Obseve 
+
+Frequency: Sometimes 
+
+
+
+!MiME - Google Chrome 2023-07-10 09-23-11 (b7a30d17-a85f-49d3-b397-6c89cabcd016).mp4|width=1920,height=1032!
+
+See the Image for better clarification 
+
+[^Oddo client error.txt]
+
+Error log file ",,Mamun Reza,ruhullahil,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,63f590a24e86f362d39b1664,,,,,,,,,,,,,10/Jul/23 9:30 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;MiME - Google Chrome 2023-07-10 09-23-11 (b7a30d17-a85f-49d3-b397-6c89cabcd016).mp4;https://digicontc.atlassian.net/rest/api/3/attachment/content/16862,10/Jul/23 9:35 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Oddo client error.txt;https://digicontc.atlassian.net/rest/api/3/attachment/content/16863,,,,,,,,,,,{},,,,,,,,2|i000kf:,,,,,,,,,,,,2023-07-10 03:35:16.182,10/Jul/23 9:35 AM;63f590a24e86f362d39b1664;[~accountid:712020:d9d63273-d27f-45c0-99e9-c038f129f710] vai please refresh the page,"10/Jul/23 9:37 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Refresh is not a solution vai, the issue happens randomly so needs to fix permanently. ",,,,,,In Progress
+[Asset_Transfer]: Product selection dropdown from Add an item will show their own location products only other than all product ,MOI-200,16789,Bug,To Do,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,09/Jul/23 11:45 AM,09/Jul/23 1:30 PM,29/Jul/23 9:05 PM,,,0,Asset_Management_Issues,"* The dropdown will show their own location product only other than all product 
+
+!image-20230709-053948.png|width=1532,height=686!",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,09/Jul/23 11:45 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230709-053948.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16857,,,,,,,,,,,,{},,,,,,,,2|i000jr:,,,,,,,,,,,,,,,,,,,,To Do
+[Asset_Transfer]: Store In-charge will be permitted to view only their own location asset status instead of view all from Asset Transfer ,MOI-199,16788,Bug,To Do,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,09/Jul/23 10:41 AM,09/Jul/23 10:41 AM,11/Jul/23 11:15 AM,,,0,Asset_Management_Issues,"* Store In-charge will be permitted to view only their own location asset status from the Asset Transfer 
+* Can’t view others' locations Asset status 
+
+!image-20230709-044015.png|width=1538,height=594!
+
+Image: Anyone can view others Asset transfer activity ",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,09/Jul/23 10:41 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230709-044015.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16856,,,,,,,,,,,,{},,,,,,,,2|i000jj:,,,,,,,,,,,,,,,,,,,,To Do
+[Asset_Transfer]: Product and Locations option need to remove from Approver permission ,MOI-198,16787,Task,To Do,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Medium,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,09/Jul/23 10:09 AM,09/Jul/23 10:09 AM,11/Jul/23 11:15 AM,,,0,Asset_Management_Issues,"!image-20230709-040341.png|width=1555,height=664!",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,09/Jul/23 10:09 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230709-040341.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16855,,,,,,,,,,,,{},,,,,,,,2|i000jb:,,,,,,,,,,,,,,,,,,,,To Do
+[Asset_Transfer]: Import button need to removed from Asset Transfer table ,MOI-197,16786,Bug,To Do,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Medium,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,09/Jul/23 9:58 AM,09/Jul/23 9:58 AM,10/Jul/23 9:18 AM,,,0,Asset_Management_Issues,"
+
+!image-20230709-035825.png|width=1527,height=597!",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,09/Jul/23 9:58 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230709-035825.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16854,,,,,,,,,,,,{},,,,,,,,2|i000j3:,,,,,,,,,,,,,,,,,,,,To Do
+"Lot/Serial Number should be ""Serial Number"" for both of  Asset without FAMIS and Asset Pool tables",MOI-196,16785,Bug,In Progress,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Medium,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,08/Jul/23 3:42 PM,10/Jul/23 9:44 AM,11/Jul/23 11:15 AM,,,0,Asset_Management_Issues,"
+
+!image-20230708-094129.png|width=1535,height=670!
+
+Asset without FAMIS table
+
+!image-20230708-094159.png|width=1523,height=567!
+
+ Asset Pool table","
+
+!image-20230708-093739.png|width=1535,height=479!",Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,08/Jul/23 3:42 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230708-093739.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16853,08/Jul/23 3:42 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230708-094129.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16851,08/Jul/23 3:42 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230708-094159.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16852,,,,,,,,,,{},,,,,,,,2|i000iv:,,,,,,,,,,,,,,,,,,,,In Progress
+"[Asset_Transfer]: ""FAMIS Serial"" field need to define with ""*"" as a mandatory field. ",MOI-195,16780,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,High,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,06/Jul/23 2:11 PM,08/Jul/23 2:38 PM,11/Jul/23 11:15 AM,08/Jul/23 2:38 PM,,0,Asset_Management_Issues,"Steps:
+
+Assets without FAMIS > Edit > Observe
+
+!image-20230706-081100.png|width=58.33%!",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,06/Jul/23 2:11 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230706-081100.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16843,,,,,,,,,,,,{},,,,,,,,2|i000hz:,,,,,,,,,,,,,,,,,,,,Done
+"[Asset_Transfer]: Internal Reference, IPTV Username and Status fields should be remove from Asset without FAMIS form (edit mode) ",MOI-194,16779,Bug,In Progress,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,High,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,06/Jul/23 2:05 PM,10/Jul/23 9:41 AM,11/Jul/23 11:15 AM,,,0,Asset_Management_Issues,"Steps:
+
+Assets without FAMIS > Edit > Observe 
+
+!image-20230706-080329.png|width=1241,height=643!",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,06/Jul/23 2:05 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230706-080329.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16842,08/Jul/23 2:38 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230708-083838.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16849,,,,,,,,,,,{},,,,,,,,2|i000hr:,,,,,,,,,,,,,"08/Jul/23 2:38 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;h1. Internal Reference field still showing, please remove it as intended 
+
+!image-20230708-083838.png|width=1530,height=583!",,,,,,,In Progress
+"[Asset_Transfer]:  Need to remove ""Create"" and ""Import"" buttons from  Assets without FAMIS and Asset Pool, ",MOI-193,16778,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,06/Jul/23 1:56 PM,10/Jul/23 11:53 AM,11/Jul/23 11:15 AM,10/Jul/23 11:53 AM,,0,Asset_Management_Issues,"!image-20230706-075121.png|width=1507,height=389!
+
+Image: Assets without FAMIS
+
+
+
+!image-20230706-075155.png|width=1530,height=375!
+
+Image: Asset Pool",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,06/Jul/23 1:56 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230706-075121.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16840,06/Jul/23 1:56 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230706-075155.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16841,,,,,,,,,,,{},,,,,,,,2|i000hj:,,,,,,,,,,,,,,,,,,,,Done
+[Asset_Transfer]: Approver will not permitted to create asset transfer  ,MOI-192,16776,Improvement,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,High,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,06/Jul/23 1:24 PM,08/Jul/23 2:42 PM,12/Jul/23 10:13 AM,08/Jul/23 2:42 PM,,0,Asset_Management_Issues,"Create button will hide from the asset transfer page  for Approver permission 
+
+!image-20230706-072555.png|width=1526,height=726!
+
+See the image for more clarification ",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,06/Jul/23 1:26 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230706-072555.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16838,,,,,,,,,,,,{},,,,,,,,2|i000h3:,,,,,,,,,,,,,,,,,,,,Done
+[Asset_Transfer]: Brand field should not be clickable and use [-] instead of blank ,MOI-191,16775,Improvement,QA Testing,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,High,,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,06/Jul/23 12:41 PM,08/Jul/23 1:22 PM,31/Jul/23 4:02 PM,,,0,Asset_Management_Issues,"!image-20230706-064107.png|width=1264,height=661!
+
+Image for more clarification",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,06/Jul/23 12:41 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230706-064107.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16837,,,,,,,,,,,,{},,,,,,,,2|i000gv:,,,,,,,,,,,,,,,,,,,,In Progress
+"[Asset_Transfer]: Lot field name should be ""Serial Number"" ",MOI-190,16774,Improvement,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,High,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,06/Jul/23 12:37 PM,10/Jul/23 11:51 AM,10/Jul/23 11:49 AM,10/Jul/23 11:51 AM,,0,Asset_Management_Issues,"The Lot field name should be ""Serial Number""  from Detailed  Operations
+
+
+
+!image-20230706-063518.png|width=1018,height=483!",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,06/Jul/23 12:37 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230706-063518.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16836,,,,,,,,,,,,{},,,,,,,,2|i000gn:,,,,,,,,,,,,,,,,,,,,Done
+"[Asset_Transfer]: Transfer option name will be ""Asset Transfer"" from  asset management module ",MOI-189,16773,Improvement,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,06/Jul/23 12:27 PM,08/Jul/23 2:43 PM,09/Jul/23 10:29 AM,08/Jul/23 2:43 PM,,0,Asset_Management_Issues,"Steps:
+
+Login > Inventory > Asset Management > Transfer 
+
+
+
+!image-20230706-062313.png|width=327,height=268!",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,06/Jul/23 12:27 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230706-062313.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16835,,,,,,,,,,,,{},,,,,,,,2|i000gf:,,,,,,,,,,,,,,,,,,,,Done
+"[Asset_Transfer]: Need to create new permission group as ""Asset FAMIS tag generator"" ",MOI-188,16772,Improvement,In Progress,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,06/Jul/23 12:17 PM,09/Jul/23 10:41 AM,09/Jul/23 10:31 AM,,,0,Asset_Management_Issues,"* Only ""Asset FAMIS tag generator""  will tag the FAMIS from Asset without FAMIS menu
+* POP incharge will not get Asset without FAMIS menu from their permission ",,Mamun Reza,ruhullahil,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,63f590a24e86f362d39b1664,,,,,,,,,,,,,08/Jul/23 2:28 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;FAMIS Tag Generate by POP incharge.mp4;https://digicontc.atlassian.net/rest/api/3/attachment/content/16848,08/Jul/23 2:54 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230708-085428.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16850,,,,,,,,,,,{},,,,,,,,2|i000g7:,,,,,,,,,,,,2023-07-08 08:34:48.735,"08/Jul/23 2:28 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Till the “Assets without FAMIS” option shows at store in-charge panel after unchecking from admin permission and can generate FAMIS tag
+
+
+
+!FAMIS Tag Generate by POP incharge.mp4|width=1920,height=1032!",08/Jul/23 2:34 PM;63f590a24e86f362d39b1664;[~accountid:712020:d9d63273-d27f-45c0-99e9-c038f129f710] vai check now,"08/Jul/23 2:54 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Still the same vai, also showing at the approver end 
+
+
+
+!image-20230708-085428.png|width=1535,height=578!",09/Jul/23 10:41 AM;63f590a24e86f362d39b1664;done,,,,In Progress
+[Asstet_Transfer]: Password Eye icon need to add inside password field and password should be visible when click on eye icon,MOI-187,16771,Improvement,QA Testing,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Medium,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,06/Jul/23 12:07 PM,09/Jul/23 10:48 AM,11/Jul/23 11:14 AM,,,0,Asset_Management_Issues,"The eye icon need to add inside the password field and password should be visible when clicking on eye icon
+
+
+
+!Password Eye icon need to add inside password field and pass word shoulbe be visible when click on eye icon.png|width=1116,height=525!
+
+Need to add ",,Mamun Reza,ruhullahil,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,63f590a24e86f362d39b1664,,,,,,,,,,,,,06/Jul/23 12:07 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Password Eye icon need to add inside password field and pass word shoulbe be visible when click on eye icon.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16834,,,,,,,,,,,,{},,,,,,,,2|i000fz:,,,,,,,,,,,,2023-07-09 04:48:16.119,09/Jul/23 10:48 AM;63f590a24e86f362d39b1664;[~accountid:712020:d9d63273-d27f-45c0-99e9-c038f129f710] vai It has technical challenges and has an impact on mime inventory current process. so ignore it this time.,,,,,,,In Progress
+"[Asset_Transfer]: Asset transfer request can delete every user, even after approval from their transfer list.",MOI-186,16765,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,High,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,05/Jul/23 5:37 PM,08/Jul/23 2:55 PM,11/Jul/23 11:14 AM,08/Jul/23 2:55 PM,,0,Asset_Management_Issues,"* Only the initiator will be deleted the transfer request before approval.
+* Without Initiator no one can be permitted to delete the transfer request.
+* After approval, Initiator will not be permitted to delete the transfer request.
+
+!Assets Transfer_ can delete every user.mp4|width=1920,height=1032!
+
+Please see the video for more clarification ",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,05/Jul/23 5:37 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Assets Transfer_ can delete every user.mp4;https://digicontc.atlassian.net/rest/api/3/attachment/content/16826,,,,,,,,,,,,{},,,,,,,,2|i000en:,,,,,,,,,,,,,,,,,,,,Done
+"""Store Incharge"" Role should not get permission to Tag FAMIS Id",MOI-185,16756,Improvement,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,22/Jun/23 5:35 PM,10/Jul/23 11:52 AM,10/Jul/23 11:52 AM,10/Jul/23 11:52 AM,,0,Asset_Management_Issues,The user who will have Store Incharge role should not be able to tag FAMIS Id. ,,Anika Tahsin,,,,60fe7c083900e60070744b3a,,,,,,,,,,,,,,,,,,,,,,,,,,{},,,,,,,,2|hzyzi7:ho,,,,,,,,,,,,,,,,,,,,Done
+"Need to create a New Permission as ""MRR Initiator""",MOI-184,16755,Improvement,To Do,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,22/Jun/23 5:33 PM,25/Jun/23 11:16 AM,02/Jul/23 11:12 AM,,,0,Asset_Management_Issues,"MRR Initiator role will get permission -
+
+To create MRR
+
+To Tag FAMIS ID",,Anika Tahsin,RipanBasak,ruhullahil,Shafiul Gani,60fe7c083900e60070744b3a,5d33ed7cd7be220c1ab5046a,63f590a24e86f362d39b1664,61c162c6e67ea2006b0c5e8f,,,,,,,,,,,,,,,,,,,,,,,{},,,,,,,,2|hzyzi7:hm,,,,,,,,,,,,2023-06-22 13:19:22.125,22/Jun/23 7:19 PM;63f590a24e86f362d39b1664;[~accountid:60fe7c083900e60070744b3a] apu need more clarification,"22/Jun/23 7:22 PM;60fe7c083900e60070744b3a;[~accountid:63f590a24e86f362d39b1664] vai, we need to create a new role “MRR Initiator” along with store incharge and Relocation approver. In this role or the user who will be assigned in this role will get the below mentioned permissions-
+
+# MRR creation 
+# Asset without Famis Id to tag FAMIS Serial. ","24/Jun/23 11:12 AM;5d33ed7cd7be220c1ab5046a;[~accountid:60fe7c083900e60070744b3a] we do not have MRR while receiving product. we only have *Product Receive* Menu. So MRR role creation has no impact. 
+
+C.C [~accountid:61c162c6e67ea2006b0c5e8f] [~accountid:5f619c827598de0069f6cba1] bhai.  ","24/Jun/23 11:13 AM;60fe7c083900e60070744b3a;[~accountid:5f619c827598de0069f6cba1] vai and [~accountid:61c162c6e67ea2006b0c5e8f] vai, can you please do the needful","25/Jun/23 11:15 AM;61c162c6e67ea2006b0c5e8f;Align with [~accountid:5d33ed7cd7be220c1ab5046a] da, we have only the product receive option & menu for stock update in inventory currently. We can work on the specific MRR permission later on after further analysis if require. 
+
+CC: [~accountid:5f619c827598de0069f6cba1] Bhai",,,To Do
+[Asset_Transfer]: Product Name and Lot/Serial Number columns need to add at Assets Transfer list,MOI-183,16754,Improvement,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,High,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,22/Jun/23 4:43 PM,24/Jun/23 10:57 AM,08/Jul/23 2:58 PM,24/Jun/23 10:56 AM,,0,Asset_Management_Issues,"Please add the “Product Name” and “Lot/Serial Number” columns need to add at Assets Transfer list after the “Partner” column. 
+
+Partner | Product Name | Lot/Serial Number |
+
+Image: Column format
+
+!column foramat.png|width=500,height=52!",,Mamun Reza,ruhullahil,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,63f590a24e86f362d39b1664,,,,,,,,,,,,,22/Jun/23 4:44 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;column foramat.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16813,,,,,,,,,,,,{},,,,,,,,2|i000db:,,,,,,,,,,,,2023-06-22 10:53:59.54,22/Jun/23 4:53 PM;63f590a24e86f362d39b1664;[~accountid:712020:d9d63273-d27f-45c0-99e9-c038f129f710] vai technically it not possible. because the product may have multiple and serial may have multiple. but we can show only one product or serial but not multiple,24/Jun/23 10:57 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;As discussed with saidur vai this improvement has been handled from the alert message. So closing this improvement,,,,,,Done
+[Asset_Without_FAMIS]: FAMIS Id should be unique,MOI-180,16747,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,21/Jun/23 3:14 PM,22/Jun/23 12:00 PM,05/Jul/23 9:31 AM,22/Jun/23 12:00 PM,,0,Asset_Management_Issues,"Example: Product-01, Lot/serial number-01, FAMIS Serial -FAMIS-01
+
+This FAMIS-01 should not allowed to tag for any other product. This FAMIS Serial must needd to be unique.",,Anika Tahsin,ruhullahil,,,60fe7c083900e60070744b3a,63f590a24e86f362d39b1664,,,,,,,,,,,,,,,,,,,,,,,,,{},,,,,,,,2|hzz4em:hzy,,,,,,,,,,,,2023-06-22 04:27:50.888,22/Jun/23 10:27 AM;63f590a24e86f362d39b1664;done,22/Jun/23 12:00 PM;60fe7c083900e60070744b3a;This is done,,,,,,Done
+"[Asset_Transfer_Mail]: Asset Sender himself received the mail when clicking the ""Send for Approval"" button This mail should be sent to the approver instead of the sender.",MOI-179,16746,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,21/Jun/23 3:07 PM,22/Jun/23 2:49 PM,05/Jul/23 9:33 AM,22/Jun/23 2:49 PM,,0,Asset_Management_Issues,"# Sender create asset transfer> click Send For Approval> Check sender mail > observe  
+# Approver’s name is missing in the mail (It shows “Dear“ only), Need to add approver’s name as given email template 
+# The mail should be sent to the Approver email. 
+
+
+
+!Sender received mail himself.png|width=677,height=432!",,Mamun Reza,ruhullahil,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,63f590a24e86f362d39b1664,,,,,,,,,,,,MOI-176,22/Jun/23 12:12 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Mail body need modification.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16807,21/Jun/23 3:07 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Sender received mail himself.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16802,,,,,,,,,,,{},,,,,,,,2|i000c7:,,,,,,,,,,,,2023-06-22 04:28:15.835,22/Jun/23 10:28 AM;63f590a24e86f362d39b1664;done,"22/Jun/23 12:12 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;mail flow is working now
+
+but needs a modification on the mail body.
+
+Issue details: If there has multiple approvers, the system pulls all approver names in mail body after Dear. It should be “Dear Concern,” (String) 
+
+Expected result: “{color:#36b37e}Dear Concern,{color}”
+
+Actual Result: “{color:#ff5630}Dear amin, Approver,{color}”
+
+
+
+!Mail body need modification.png|width=659,height=348!",22/Jun/23 2:18 PM;63f590a24e86f362d39b1664;Done,,,,,Done
+[Asset_Transfer]: Text overlap showing in inventory dashboard  ,MOI-178,16743,Bug,Issue Found,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Low,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,20/Jun/23 4:49 PM,25/Jun/23 3:46 PM,26/Jun/23 11:39 AM,,,0,Asset_Management_Issues,"Text overlaps with the Delivery Orders box in the inventory dashboard. 
+
+!Text over lapping in inventory dashboard.png|width=1148,height=312!
+
+See the image for better clarification ",,Mamun Reza,ruhullahil,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,63f590a24e86f362d39b1664,,,,,,,,,,,,,20/Jun/23 4:49 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Text over lapping in inventory dashboard.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16797,,,,,,,,,,,,{},,,,,,,,2|i000bj:,,,,,,,,,,,,2023-06-20 11:09:48.958,20/Jun/23 5:09 PM;63f590a24e86f362d39b1664;[~accountid:712020:d9d63273-d27f-45c0-99e9-c038f129f710] vai As the dashboard is not part of asset management. I will be ignoring this requirement.,22/Jun/23 5:41 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Need to fix this issue.,"25/Jun/23 3:46 PM;63f590a24e86f362d39b1664;As it is r&d type work . it needs time   and it doesn't block any process. 
+
+so we ignore this issue at this time ",,,,,In Progress
+[Asset_Transfer]: Need to add text field for reason of Reject at Approver and Receiver panel. while clicking on Reject button a text field will appear as mandatory field  ,MOI-177,16742,Task,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Medium,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,20/Jun/23 4:28 PM,22/Jun/23 2:48 PM,22/Jun/23 2:53 PM,22/Jun/23 2:48 PM,,0,Asset_Management_Issues,"
+
+# The text field will appear only when reject button will be clicked for both of Approver and Receiver panels.  If approve or receive or send for approval button will be clicked, the system will not consider it as a mandatory field
+# Neither the Approver nor the Receiver may reject without reason in writing.
+
+3. Sender will be notified by mail with the Reject reason.
+
+!Reason to reject field.png|width=1147,height=528!",,Mamun Reza,ruhullahil,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,63f590a24e86f362d39b1664,,,,,,,,,,,,,21/Jun/23 1:46 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Asset CRM_Rejection_email.xlsx;https://digicontc.atlassian.net/rest/api/3/attachment/content/16801,20/Jun/23 4:28 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Reason to reject field.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16794,22/Jun/23 11:54 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;email subjects need a first backet (.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16806,,,,,,,,,,{},,,,,,,,2|i000bb:,,,,,,,,,,,,2023-06-20 11:15:12.463,"20/Jun/23 5:15 PM;63f590a24e86f362d39b1664;[~accountid:712020:d9d63273-d27f-45c0-99e9-c038f129f710] Vai. as it is not in the initial development plan. if it needs to be in corporate, then needs some time, and you have to give the mail template and have to tell who will receive the mail.",20/Jun/23 6:28 PM;63f590a24e86f362d39b1664;it added,"21/Jun/23 1:46 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Text field has been added, please implement the email as well
+
+Herein attached the Rejection email template [~accountid:63f590a24e86f362d39b1664] vai 
+
+[^Asset CRM_Rejection_email.xlsx]
+
+If have any queries plz let me know ","21/Jun/23 2:11 PM;63f590a24e86f362d39b1664;[~accountid:712020:d9d63273-d27f-45c0-99e9-c038f129f710] vai . please test others, incorporating it needs some time. after incorporating I will notify you",22/Jun/23 10:28 AM;63f590a24e86f362d39b1664;Done,"22/Jun/23 11:54 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Text added and mail flow is working fine 
+
+but I 
+
+have found the email subject issue 
+
+Issue: First bracket “(“ is missing after the subject.
+
+Expected result: Asset Rejection Notification (Ref WH/INT/00177)
+
+Actual result: Asset Rejection Notification (Ref WH/INT/00177)
+
+
+
+!email subjects need a first backet (.png|width=703,height=490!",22/Jun/23 2:17 PM;63f590a24e86f362d39b1664;Done,Done
+Email needs to be incorporated accroding to the Email template,MOI-176,16741,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,20/Jun/23 3:33 PM,22/Jun/23 4:23 PM,22/Jun/23 4:24 PM,22/Jun/23 4:23 PM,,0,Asset_Management_Issues,"Kindly find the Email template and incorporate according to it-
+
+[^Email_Format.xlsx]
+
+",,Anika Tahsin,ruhullahil,,,60fe7c083900e60070744b3a,63f590a24e86f362d39b1664,,,,,,,,,,,MOI-179,,20/Jun/23 3:33 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Email_Format.xlsx;https://digicontc.atlassian.net/rest/api/3/attachment/content/16790,,,,,,,,,,,,{},,,,,,,,2|hzz4em:hzx,,,,,,,,,,,,2023-06-20 09:52:46.388,20/Jun/23 3:52 PM;63f590a24e86f362d39b1664;as we don't get any mail templates before this time so we set a generalized mail template,21/Jun/23 4:19 PM;60fe7c083900e60070744b3a;Related issue needs to be fixed.,,,,,,Done
+[Asset_Transfer]: Received should be rename as Receive,MOI-175,16740,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Medium,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,20/Jun/23 2:56 PM,21/Jun/23 11:17 AM,22/Jun/23 2:54 PM,21/Jun/23 11:17 AM,,0,Asset_Management_Issues,"Kindly check the image for better view
+
+!image-20230620-085652.png|width=1355,height=650!",,Anika Tahsin,,,,60fe7c083900e60070744b3a,,,,,,,,,,,,,,20/Jun/23 2:56 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;image-20230620-085652.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16789,,,,,,,,,,,,{},,,,,,,,2|hzz4em:hzv,,,,,,,,,,,,,21/Jun/23 11:17 AM;60fe7c083900e60070744b3a;This is done.,,,,,,,Done
+"[Asset_Status_manage]: A user who is having only ""Relocation Manager"" role, should not be able to manage asset status",MOI-174,16739,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,20/Jun/23 2:11 PM,21/Jun/23 2:11 PM,22/Jun/23 2:55 PM,21/Jun/23 2:11 PM,,0,Asset_Management_Issues,"Kindly check the video for better view
+
+!Manage Status.wmv|thumbnail!",,Anika Tahsin,,,,60fe7c083900e60070744b3a,,,,,,,,,,,,,,20/Jun/23 2:11 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Manage Status.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16785,,,,,,,,,,,,{},,,,,,,,2|hzz4em:hzr,,,,,,,,,,,,,21/Jun/23 2:11 PM;60fe7c083900e60070744b3a;This is done.,,,,,,,Done
+[Asset_Transfer]: Asset auto add to Destination store in-charge account without receive request [Receiver> My assets pool],MOI-173,16738,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,20/Jun/23 2:08 PM,22/Jun/23 2:51 PM,22/Jun/23 2:55 PM,22/Jun/23 2:51 PM,,0,Asset_Management_Issues,"Asset auto add de store in charge account without receive request.
+
+Reproduce path: 
+
+Transfer asset from sender> approved request by using Approver access > now check the destination “My Assets Pool”> observe ",,Mamun Reza,ruhullahil,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,63f590a24e86f362d39b1664,,,,,,,,,,,,,20/Jun/23 3:40 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Inventory - MiME - Google Chrome 2023-06-20 15-34-42.mp4;https://digicontc.atlassian.net/rest/api/3/attachment/content/16791,21/Jun/23 3:33 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230621-093232.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16804,,,,,,,,,,,{},,,,,,,,2|i000b3:,,,,,,,,,,,,2023-06-20 08:48:09.118,20/Jun/23 2:48 PM;63f590a24e86f362d39b1664;[~accountid:712020:d9d63273-d27f-45c0-99e9-c038f129f710] vai can not get it. can you please explain ,"20/Jun/23 3:00 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;[~accountid:63f590a24e86f362d39b1664] vai I tried it via the dashboard, 
+
+Go to dashboard> select transfer request > Observe
+
+!Inventory - MiME - Google Chrome 2023-06-20 15-34-42.mp4|width=1920,height=1032!",20/Jun/23 3:35 PM;63f590a24e86f362d39b1664;[~accountid:712020:d9d63273-d27f-45c0-99e9-c038f129f710] vai It should only work from asset management transfer not other then that ..,"21/Jun/23 3:33 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;As per our discussion, please disable/ hide **Internal Transfer” card from the dashboard.
+
+
+
+!image-20230621-093232.png|width=1486,height=542!",22/Jun/23 10:29 AM;63f590a24e86f362d39b1664;Done,,,Done
+[Asset_Transfer]: Wrong button naming convention showing in approver panel instead of approve and reject  ,MOI-172,16737,Bug,QA Testing,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,High,,ruhullahil,63f590a24e86f362d39b1664,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,20/Jun/23 1:48 PM,06/Jul/23 11:56 AM,06/Jul/23 4:39 PM,,,0,Asset_Management_Issues,"*In the approver panel, Mark as Todo, Validate and Cancel buttons showing instead of Approve and Reject buttons*
+
+*Steps:* 
+
+Login with approver credential > Go to dashboard> select transfer request > Observe 
+
+
+
+!Wrong button naming in approver panel .jpg|width=1202,height=633!",,Mamun Reza,ruhullahil,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,63f590a24e86f362d39b1664,,,,,,,,,,,,,20/Jun/23 1:48 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Wrong button naming in approver panel .jpg;https://digicontc.atlassian.net/rest/api/3/attachment/content/16784,21/Jun/23 3:35 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230621-093232.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16805,05/Jul/23 9:39 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;image-20230705-034011.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16824,,,,,,,,,,{},,,,,,,,2|i000av:,,,,,,,,,,,,2023-06-20 09:02:04.061,20/Jun/23 3:02 PM;63f590a24e86f362d39b1664;[~accountid:712020:d9d63273-d27f-45c0-99e9-c038f129f710] vai you can not go through the dashboard. it is expected behavior. you should go from asset management > transfer,"21/Jun/23 3:35 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;As per our discussion, please disable/ hide **Internal Transfer” card from the dashboard.
+
+
+
+!image-20230621-093232.png|width=1486,height=542!",22/Jun/23 10:29 AM;63f590a24e86f362d39b1664;Done,"05/Jul/23 9:39 AM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;[~accountid:63f590a24e86f362d39b1664] vai after Installing the app,  Wrong button naming convention showing from Dashboard as in the previous scenario,  please fix it. 
+
+
+
+!image-20230705-034011.png|width=1388,height=603!",,,,In Progress
+[Asset_Transfer]: Unable to edit source location ,MOI-171,16736,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Medium,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,20/Jun/23 1:01 PM,21/Jun/23 2:14 PM,22/Jun/23 2:55 PM,21/Jun/23 2:14 PM,,0,Asset_Management_Issues,"Kindly check the video for better view
+
+!Destination location while editing.wmv|thumbnail!
+
+Note:
+
+*Login user*: anika.test
+
+*Assigned Role*: Relocation Manager and Store Incharge",,Anika Tahsin,ruhullahil,,,60fe7c083900e60070744b3a,63f590a24e86f362d39b1664,,,,,,,,,,,MOI-162,,20/Jun/23 1:01 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Destination location while editing.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16783,,,,,,,,,,,,{},,,,,,,,2|hzz4em:hzi,,,,,,,,,,,,2023-06-21 08:13:49.94,21/Jun/23 2:13 PM;63f590a24e86f362d39b1664;[~accountid:60fe7c083900e60070744b3a] apu . it already solved ,21/Jun/23 2:14 PM;60fe7c083900e60070744b3a;This is done.,,,,,,Done
+"[Asset_Transfer]: If there is already a request exists for same location's same lot number, then system should not allow to enter draft with same location's same lot number",MOI-170,16735,Bug,QA Testing,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,20/Jun/23 12:58 PM,26/Jun/23 10:15 AM,22/Jun/23 2:55 PM,,,0,Asset_Management_Issues,"Kindly check the video for better view
+
+!Once received another request can be received as well.wmv|width=640,height=331!
+
+*Example*: 
+
+One entry exists with one asset from location - Mirpur-1 and asset lot number: 01 (Pending in draft/relocation approver/store incharge approver. 
+
+Another entry with same asset from locatiion - Mirpur-1 and asset lot number: 01(System should give alert as “*Already one entry exists with same Assets' Lot/Serial Number*”)",,Anika Tahsin,ruhullahil,,,60fe7c083900e60070744b3a,63f590a24e86f362d39b1664,,,,,,,,,,,,,20/Jun/23 12:58 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Once received another request can be received as well.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16782,,,,,,,,,,,,{},,,,,,,,2|hzz4em:hz,,,,,,,,,,,,2023-06-22 04:30:05.127,"21/Jun/23 3:40 PM;60fe7c083900e60070744b3a;User will be puzzled if the Lot number will not be available into detailed operation option. So, if any asset with same product’s lot number has been raised for transfer request and pending in any stage the system should give alert as “*Already one entry exists with same Assets' Lot/Serial Number*”. Only when the Request will be rejected or received, then only this product’s serial number will be allowed to sned for transfer request. ",22/Jun/23 10:30 AM;63f590a24e86f362d39b1664;done,22/Jun/23 4:22 PM;60fe7c083900e60070744b3a;This is done.,22/Jun/23 5:30 PM;60fe7c083900e60070744b3a;Kindly change the alert as “*Already one entry {Asset Transfer Reference Number} exists with same Assets' Lot/Serial Number”*,26/Jun/23 10:07 AM;63f590a24e86f362d39b1664;done,"26/Jun/23 10:14 AM;63f590a24e86f362d39b1664;[~accountid:60fe7c083900e60070744b3a]  apu , i was doing it two days ago but waiting for role-related confirmation to deploy it at one time. though role related part is not fully sorted yet.  so today I pushed it  and deploying",,In Progress
+"[Transfer_Asset]: After clicking on send for approval, system is showing an error",MOI-168,16732,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,20/Jun/23 10:41 AM,20/Jun/23 11:38 AM,10/Aug/23 12:26 PM,20/Jun/23 11:38 AM,,0,Asset_Management_Issues,"Kindly check the video for better view
+
+!Send for approval server error.wmv|thumbnail!
+
+*Login user*: anika.tashin",,Anika Tahsin,ruhullahil,,,60fe7c083900e60070744b3a,63f590a24e86f362d39b1664,,,,,,,,,,,,,20/Jun/23 10:41 AM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Send for approval server error.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16777,,,,,,,,,,,,{},,,,,,,,2|hzz4em:hx,,,,,,,,,,,,2023-06-20 04:45:58.953,20/Jun/23 10:45 AM;63f590a24e86f362d39b1664;solved,20/Jun/23 11:38 AM;60fe7c083900e60070744b3a;This is done.,,,,,,Done
+Lot number not showing during selection in Detailed Operations form ,MOI-167,16730,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Low,Done,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,Mamun Reza,712020:d9d63273-d27f-45c0-99e9-c038f129f710,19/Jun/23 5:10 PM,21/Jun/23 3:53 PM,22/Jun/23 9:27 AM,21/Jun/23 3:53 PM,,0,Asset_Management_Issues,"Detailed Operations > Add an item > Try to select lot > observe 
+
+!Lot number not showing in detailed Operations page.png|width=619,height=352!
+
+See the attached image for clarification",,Mamun Reza,,,,712020:d9d63273-d27f-45c0-99e9-c038f129f710,,,,,,,,,,,,,,19/Jun/23 5:10 PM;712020:d9d63273-d27f-45c0-99e9-c038f129f710;Lot number not showing in detailed Operations page.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16776,,,,,,,,,,,,{},,,,,,,,2|i000af:,,,,,,,,,,,,,,,,,,,,Done
+"[Asset_Transfer]: If user is having only stock incharge or Relocation approve permission along with Inventory menu permission, system is not allowing to click on any button from approval flow",MOI-166,16728,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,19/Jun/23 3:18 PM,20/Jun/23 1:30 PM,22/Jun/23 4:03 PM,20/Jun/23 1:30 PM,,0,Asset_Management_Issues,"Kindly check the video for better view
+
+!Send for approval error.wmv|thumbnail!",,Anika Tahsin,ruhullahil,,,60fe7c083900e60070744b3a,63f590a24e86f362d39b1664,,,,,,,,,,,,,19/Jun/23 3:18 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Send for approval error.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16773,,,,,,,,,,,,{},,,,,,,,2|hzz4em:hv,,,,,,,,,,,,2023-06-19 10:15:38.904,19/Jun/23 4:15 PM;63f590a24e86f362d39b1664;done,20/Jun/23 1:30 PM;60fe7c083900e60070744b3a;This is done.,,,,,,Done
+"[Asset_Transfer]: Even if, any user is not manager of WH/Stock location, still that user can send relocation request ",MOI-165,16727,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,19/Jun/23 3:04 PM,21/Jun/23 2:09 PM,22/Jun/23 3:49 PM,21/Jun/23 2:09 PM,,0,Asset_Management_Issues,"Only the manager of the location should be able to send request for relocation and if any request come for that location can be received by the manager.
+
+Kindly check the video for better view
+
+!Stock manager and sender.wmv|thumbnail!",,Anika Tahsin,,,,60fe7c083900e60070744b3a,,,,,,,,,,,,,,19/Jun/23 3:04 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Stock manager and sender.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16770,,,,,,,,,,,,{},,,,,,,,2|hzz4em:hr,,,,,,,,,,,,,21/Jun/23 2:09 PM;60fe7c083900e60070744b3a;This is done.,,,,,,,Done
+"[Asset_Transfer]: Assets, which has no FAMIS tag, can still be relocated from one location to another",MOI-163,16725,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,19/Jun/23 2:17 PM,20/Jun/23 2:31 PM,19/Jun/23 5:11 PM,20/Jun/23 2:31 PM,,0,Asset_Management_Issues,"Kindly check the video for better view
+
+!Asset without FAMIS ID.wmv|thumbnail!",,Anika Tahsin,,,,60fe7c083900e60070744b3a,,,,,,,,,,,,,,19/Jun/23 2:17 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Asset without FAMIS ID.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16769,,,,,,,,,,,,{},,,,,,,,2|hzz4em:h,,,,,,,,,,,,,20/Jun/23 2:31 PM;60fe7c083900e60070744b3a;This is done.,,,,,,,Done
+"[Asset_Transfer]: Using different user except admin, user is not able to select source location",MOI-162,16724,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,19/Jun/23 2:07 PM,20/Jun/23 1:02 PM,10/Aug/23 12:26 PM,19/Jun/23 3:10 PM,,0,Asset_Management_Issues,"Kindly check the video for better view
+
+!Unable to select destination location.wmv|thumbnail!",,Anika Tahsin,ruhullahil,,,60fe7c083900e60070744b3a,63f590a24e86f362d39b1664,,,,,,,,,,,,MOI-171,19/Jun/23 2:08 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Unable to select destination location.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16768,,,,,,,,,,,,{},,,,,,,,2|hzz4em:g,,,,,,,,,,,,2023-06-19 08:55:31.613,19/Jun/23 2:55 PM;63f590a24e86f362d39b1664;now it is fixed ,19/Jun/23 3:10 PM;60fe7c083900e60070744b3a;This is done,,,,,,Done
+"[Store_manager_Relocation_Approver_Permission]: If any Store manager or relocation approver is having Inventory permission, by default they are getting Configuration menu permission",MOI-161,16723,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,ruhullahil,63f590a24e86f362d39b1664,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,19/Jun/23 2:04 PM,20/Jun/23 1:05 PM,19/Jun/23 4:45 PM,20/Jun/23 1:05 PM,,0,Asset_Management_Issues,"Kindly check the image for better view
+
+!image-20230619-080414.png|width=913,height=723!",,Anika Tahsin,ruhullahil,,,60fe7c083900e60070744b3a,63f590a24e86f362d39b1664,,,,,,,,,,,,,19/Jun/23 3:12 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Only store manager permission.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16771,19/Jun/23 2:04 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;image-20230619-080414.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16767,,,,,,,,,,,{},,,,,,,,2|hzz4em:f,,,,,,,,,,,,2023-06-19 09:02:57.382,19/Jun/23 3:02 PM;63f590a24e86f362d39b1664;[~accountid:60fe7c083900e60070744b3a] apu please set inventory user and give only relocation or branch inchare permission . then you only get asset management permission . you don't see any other menu,"19/Jun/23 3:12 PM;60fe7c083900e60070744b3a;I have only provided Inventory menu and Store Incharge permission but still getting other menu as well.
+
+Kindly check the video and let me know if I have to do anything else.
+
+!Only store manager permission.wmv|thumbnail!",20/Jun/23 1:05 PM;60fe7c083900e60070744b3a;This is done.,,,,,Done
+"[Store_manager_Relocation_Approver_Permission]: If any Store manager or relocation approver is having Inventory permission, by default they are getting reporting menu permission",MOI-160,16722,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,ruhullahil,63f590a24e86f362d39b1664,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,19/Jun/23 1:44 PM,20/Jun/23 1:06 PM,10/Aug/23 12:26 PM,20/Jun/23 1:06 PM,,0,Asset_Management_Issues,"Kindly check the image for better view
+
+!image-20230619-074501.png|width=1529,height=774!",,Anika Tahsin,ruhullahil,,,60fe7c083900e60070744b3a,63f590a24e86f362d39b1664,,,,,,,,,,,,,19/Jun/23 3:13 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Only store manager permission.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16772,19/Jun/23 3:43 PM;63f590a24e86f362d39b1664;Screenshot from 2023-06-19 15-41-50.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16775,19/Jun/23 1:44 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;image-20230619-074501.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16766,,,,,,,,,,{},,,,,,,,2|hzz4em:d,,,,,,,,,,,,2023-06-19 09:01:01.119,19/Jun/23 3:01 PM;63f590a24e86f362d39b1664;[~accountid:60fe7c083900e60070744b3a] apu please set inventory user and give only relocation or branch inchare permission . then you only get asset management permission . you don't see any other menu ,"19/Jun/23 3:13 PM;60fe7c083900e60070744b3a;Kindly check the video -
+
+!Only store manager permission.wmv|thumbnail!","19/Jun/23 3:43 PM;63f590a24e86f362d39b1664;[~accountid:60fe7c083900e60070744b3a]  apu access permission of upper part would be ook like this
+
+!Screenshot from 2023-06-19 15-41-50.png|width=741,height=319!
+
+ ",20/Jun/23 1:06 PM;60fe7c083900e60070744b3a;This is done.,,,,Done
+"[Location_Product_Status_Check]: In report, label required as column",MOI-159,16719,Task,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,High,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,19/Jun/23 9:52 AM,22/Jun/23 5:27 PM,10/Aug/23 12:26 PM,22/Jun/23 5:27 PM,,0,Asset_Management_Issues,"Kindly check the image for better view
+
+!image-20230619-035222.png|width=1522,height=724!",,Anika Tahsin,ruhullahil,,,60fe7c083900e60070744b3a,63f590a24e86f362d39b1664,,,,,,,,,,,,,19/Jun/23 9:52 AM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;image-20230619-035222.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16763,21/Jun/23 3:17 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;image-20230621-091731.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16803,22/Jun/23 3:26 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;image-20230622-092616.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16812,,,,,,,,,,{},,,,,,,,2|hzz4em:9,,,,,,,,,,,,2023-06-22 04:35:22.474,"21/Jun/23 3:17 PM;60fe7c083900e60070744b3a;In report, some changes are required. 
+
+Kindly check the image for better view
+
+!image-20230621-091731.png|width=1174,height=654!
+
+Menu name will also be changed as “Location Wise Asset Status Report”",22/Jun/23 10:35 AM;63f590a24e86f362d39b1664;done,22/Jun/23 11:59 AM;60fe7c083900e60070744b3a;Menu name will also be changed as “Location Wise Asset Status Report”,22/Jun/23 2:16 PM;63f590a24e86f362d39b1664;Done,"22/Jun/23 3:26 PM;60fe7c083900e60070744b3a;Kindly check the image and change accordingly.
+
+!image-20230622-092616.png|width=981,height=314!",22/Jun/23 4:49 PM;63f590a24e86f362d39b1664;Done,22/Jun/23 5:27 PM;60fe7c083900e60070744b3a;This is done.,Done
+"[Asset_Transfer]: Before sending for approval from sender end, system should give alert for adding ""Lot"" from Detailed Operation",MOI-158,16718,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,18/Jun/23 4:03 PM,20/Jun/23 11:42 AM,10/Aug/23 12:26 PM,20/Jun/23 11:42 AM,,0,Asset_Management_Issues,"Kindly check the videos for better view
+
+!Location Approver selecting lot number.wmv|thumbnail!
+
+!Without lot number Submit.wmv|thumbnail!
+
+→ Store Incharge Approver should not add “Lot” from Detailed Operations. 
+
+→ Sender should add the “Lot” as mandatory before sending for approval",,Anika Tahsin,,,,60fe7c083900e60070744b3a,,,,,,,,,,,,,,18/Jun/23 4:03 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Location Approver selecting lot number.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16761,18/Jun/23 4:03 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Without lot number Submit.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16762,,,,,,,,,,,{},,,,,,,,2|hzz4em:r,,,,,,,,,,,,,"19/Jun/23 3:28 PM;60fe7c083900e60070744b3a;If line exists and user has not given any entry for Lot number/Serial Number, then system should give alert as “Lot/Serial Number Required”",20/Jun/23 11:42 AM;60fe7c083900e60070744b3a;This is done.,,,,,,Done
+"[Transfer_Asset]: In front of Submit button, there should be a button as ""Save"" and ""Submit"" button should be rename as ""Send For Approval""",MOI-157,16717,Task,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,High,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,18/Jun/23 2:37 PM,20/Jun/23 10:43 AM,10/Aug/23 12:26 PM,20/Jun/23 10:43 AM,,0,Asset_Management_Issues,"*Save* → After clicking on “Submit” buttton it will be kept in draft stage and if user wants to change any information he/she can change that. 
+
+*Send For Approval* → After clicking on “Send For Approval” button, Request can be sent to relocation approver end.
+
+*Reject* → After reject button, request can be rejected before sending for approval
+
+Kindly check the image for better view
+
+!image-20230618-083709.png|width=1360,height=672!
+
+*Submit button should be changed as Send For Approval and There should be a new button as Save which will keep the request in draft stage*",,Anika Tahsin,,,,60fe7c083900e60070744b3a,,,,,,,,,,,,,,18/Jun/23 2:37 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;image-20230618-083709.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16760,,,,,,,,,,,,{},,,,,,,,2|hzz4em:i,,,,,,,,,,,,,20/Jun/23 10:43 AM;60fe7c083900e60070744b3a;This is done.,,,,,,,Done
+[Asset_Transfer]: For Asset Transfer request system should give alert for adding line item while sending for approval ,MOI-156,16716,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Highest,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,18/Jun/23 2:26 PM,20/Jun/23 11:45 AM,10/Aug/23 12:26 PM,20/Jun/23 11:45 AM,,0,Asset_Management_Issues,"Actual result: System is giving alert as “Please add some lines to move” when receiving store incharge is receiving asset 
+
+Expected Result: System should give alert as “Please add some line to move” while sending for approval. 
+
+Currently system is allowing go till receiving store incharge end and then giving alert, the it will be a blocker. 
+
+Kindly check the video for better view
+
+!Alert from recieve should show in initial stage.wmv|thumbnail!",,Anika Tahsin,,,,60fe7c083900e60070744b3a,,,,,,,,,,,,,,18/Jun/23 2:26 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;Alert from recieve should show in initial stage.wmv;https://digicontc.atlassian.net/rest/api/3/attachment/content/16759,,,,,,,,,,,,{},,,,,,,,2|hzz4em:,,,,,,,,,,,,,20/Jun/23 11:45 AM;60fe7c083900e60070744b3a;This is done.,,,,,,,Done
+"[Product]: While creating product, asset option is showing two times",MOI-155,16715,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,High,Done,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,18/Jun/23 2:14 PM,19/Jun/23 2:31 PM,18/Jun/23 2:18 PM,19/Jun/23 2:31 PM,,0,Asset_Management_Issues,"Kindly check the image for better view
+
+!image-20230618-081453.png|width=994,height=506!",,Anika Tahsin,,,,60fe7c083900e60070744b3a,,,,,,,,,,,,,,18/Jun/23 2:14 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;image-20230618-081453.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16758,,,,,,,,,,,,{},,,,,,,,2|hzz4el:,,,,,,,,,,,,,19/Jun/23 2:31 PM;60fe7c083900e60070744b3a;This is done,,,,,,,Done
+"[Assets_Without_FAMIS]: In the asset without famis menu, in famis serial column, famis spelling is showing wrong",MOI-154,16714,Bug,Done,MOI,MiME Odoo Inventory,software,Anirban Saha,557058:0833d777-5abc-48b9-9f47-90261a3bb036,,Medium,Done,ruhullahil,63f590a24e86f362d39b1664,Anika Tahsin,60fe7c083900e60070744b3a,Anika Tahsin,60fe7c083900e60070744b3a,18/Jun/23 2:10 PM,20/Jun/23 1:04 PM,18/Jun/23 2:17 PM,20/Jun/23 1:04 PM,,0,Asset_Management_Issues,"Kindly check the image for better view
+
+!image-20230618-081043.png|width=1528,height=615!
+
+
+
+FEMIS-> FAMIS (All in capital letter)",,Anika Tahsin,,,,60fe7c083900e60070744b3a,,,,,,,,,,,,,,18/Jun/23 2:10 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;image-20230618-081043.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16757,19/Jun/23 3:31 PM;ug:41702546-8a66-4ca2-a233-11f9fe5fa52b;image-20230619-093127.png;https://digicontc.atlassian.net/rest/api/3/attachment/content/16774,,,,,,,,,,,{},,,,,,,,2|hzz4ej:,,,,,,,,,,,,,"19/Jun/23 3:31 PM;60fe7c083900e60070744b3a;Serial has been removed from column. Kindly add Serial along with FAMIS in the column. 
+
+!image-20230619-093127.png|width=1315,height=620!",20/Jun/23 1:04 PM;60fe7c083900e60070744b3a;This is done.,,,,,,Done
