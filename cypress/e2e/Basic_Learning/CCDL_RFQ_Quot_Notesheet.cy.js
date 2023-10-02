@@ -1,7 +1,7 @@
 describe("Single Quotation", function(){
 
     it("visit", function(){
-        cy.viewport(1480, 720)
+        cy.viewport(1920, 1080)
         cy.visit('http://10.10.16.131:9090/web/login')     //url 
         cy.get('#login').type('data_migration')       // user input
         cy.get('#password').type('123456')       // password input
@@ -19,13 +19,15 @@ describe("Single Quotation", function(){
         cy.get('.o_form_buttons_edit > .btn-primary').click()               
         cy.xpath("//span[contains(.,'RFQ-Vendor')]").click()                //RFQ ventor button
         cy.wait(1000)
-        cy.xpath("(//input[@type='text'])[1]").click().type('{Enter}')     //vendor select
+        cy.xpath("(//input[@type='text'])[1]").click().type('{Enter}')     //vendor1 select
+        cy.wait(1000)
+        cy.xpath("(//input[@type='text'])[1]").click().type('{Enter}')     //vendor2 select
         cy.wait(2000)
         cy.xpath("//span[contains(.,'Save')]").click()                     // save
         cy.wait(1000)
         cy.xpath("//span[contains(.,'RFQs/Orders')]").click()              //Quoation button
         cy.wait(1000)
-        cy.xpath("//tr[contains(@class,'o_data_row text-info')]").click()   // View quoation 
+        cy.xpath("//tr[contains(@data-id,'purchase.order_2')]").click()   // View quoation 
         cy.xpath("//button[contains(@class,'edit')]").click()                //edit mode
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:first-child>td:nth-child(13)").type('120')
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(13)").type('130')
@@ -47,9 +49,13 @@ describe("Single Quotation", function(){
         cy.wait(1000)
         cy.xpath("(//span[contains(.,'Approve')])[1]").should('have.text', 'Approve')
         cy.xpath("//button[@class='btn btn-danger']").should('have.text', 'Reject')
+        cy.screenshot()
         cy.xpath("(//span[contains(.,'Approve')])[1]").click()
         cy.wait(1000)
         cy.xpath("(//span[contains(.,'Approve')])[2]").click()
+
+        cy.xpath("//span[contains(.,'Final Cancel')]").should('have.text', 'Final Cancel')
+        cy.screenshot()
 
 
 

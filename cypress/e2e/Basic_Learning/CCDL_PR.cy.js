@@ -12,7 +12,9 @@ describe("PO Creation", function(){
         cy.get('.o_navbar_apps_menu > .dropdown-toggle > .fa').click()           //menu bar
         cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
         cy.get('.o_list_button_add').click()     //create
-        cy.xpath("//div[@name='budget_line_id']//input").click().type('{enter}')   //budget line
+        cy.wait(1000)
+        cy.xpath("//div[@name='budget_line_id']//input").click().type('{enter}')   //budget line1
+        cy.wait(1000)
         cy.xpath("//div[@name='assigned_to']//input").type('Data Migration')       // approver select
         cy.xpath("//select[@name='priority']").select('High')                      //priority
         cy.xpath("//select[@name='requirement_for']").select('Operation')          //Requirement for
@@ -25,28 +27,34 @@ describe("PO Creation", function(){
 
         cy.xpath("(//a[contains(.,'Add a line')])[1]").click()                     //add line 1
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('A4 paper ( 80)').type('{enter}')
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('10')
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('2')
         cy.xpath("(//a[contains(.,'Add a line')])[1]").click()                     //add line 2
         cy.wait(1000)
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:first-child").type('Anti Cutter')
         cy.wait(1000)
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(3)").type('10')
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(3)").type('2')
 
         cy.get('.o_form_buttons_edit > .btn-primary').click() 
+        cy.screenshot()
         cy.xpath("//span[contains(.,'Send To HOD')]").should('have.text', 'Send To HOD')
         cy.wait(1000)
+        cy.screenshot()
         cy.get('[name="button_hod_approve"] > span').click()
         cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval')
         cy.wait(1000)
+        cy.screenshot()
         cy.get('[name="button_scm_approve"] > span').click()
         cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval')
         cy.wait(1000)
+        cy.screenshot()
         cy.get('[name="button_pm_approve"] > span').click()
         cy.xpath("(//span[contains(.,'Approve')])[3]").should('have.text', 'Approve')
         cy.wait(1000)
+        cy.screenshot()
         cy.get('[name="button_done"] > span').click()
         cy.wait(1000)
         cy.get('[name="button_send_for_amendment"] > span').should('have.text', 'Send for Amendment')
+        cy.screenshot()
 
 
         
