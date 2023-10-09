@@ -12,11 +12,11 @@ describe("PO Creation", function(){
         cy.get('.o_navbar_apps_menu > .dropdown-toggle > .fa').click()           //menu bar
         cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
         cy.xpath("(//span[contains(.,'Orders')])[1]").click()            //Orders
-        cy.xpath("(//a[contains(.,'Request For Quotations')])[1]").click()
+        cy.xpath("(//a[contains(.,'Request For Quotations')])[1]").click() //RFQ 
         cy.wait(2000)
-        cy.xpath("//button[@class='btn btn-primary o_list_button_add']").click()
-        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[2]").click().type('{Enter}')
-        cy.get('.o_form_buttons_edit > .btn-primary').click()
+        cy.xpath("//button[@class='btn btn-primary o_list_button_add']").click() //create RFQ
+        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[2]").click().type('{Enter}') //PR no select
+        cy.get('.o_form_buttons_edit > .btn-primary').click()     //save RFQ
         
 
 

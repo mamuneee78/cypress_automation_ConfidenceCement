@@ -1,7 +1,7 @@
 describe("PO Creation", function(){
 
     it("visit", function(){
-        cy.viewport(1920, 1080)
+        cy.viewport(1280, 720)
         cy.visit('http://10.10.16.131:9090/web/login')     //url 
         cy.get('#login').type('data_migration')       // user input
         cy.get('#password').type('123456')       // password input
@@ -14,7 +14,8 @@ describe("PO Creation", function(){
         cy.get('.o_list_button_add').click()     //create
         cy.wait(1000)
         cy.xpath("//div[@name='budget_line_id']//input").click().type('{enter}')   //budget line1
-        cy.wait(1000)
+        cy.xpath("//div[@name='budget_line_id']//input").type('{enter}')   //budget line1
+        // cy.wait(1000)
         cy.xpath("//div[@name='assigned_to']//input").type('Data Migration')       // approver select
         cy.xpath("//select[@name='priority']").select('High')                      //priority
         cy.xpath("//select[@name='requirement_for']").select('Operation')          //Requirement for

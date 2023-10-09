@@ -1,7 +1,7 @@
-describe("Single Quotation", function(){
+describe("RFQ Quot NS", function(){
 
     it("visit", function(){
-        cy.viewport(1920, 1080)
+        cy.viewport(1920, 1200)
         cy.visit('http://10.10.16.131:9090/web/login')     //url 
         cy.get('#login').type('data_migration')       // user input
         cy.get('#password').type('123456')       // password input
@@ -27,12 +27,16 @@ describe("Single Quotation", function(){
         cy.wait(1000)
         cy.xpath("//span[contains(.,'RFQs/Orders')]").click()              //Quoation button
         cy.wait(1000)
-        cy.xpath("//tr[contains(@data-id,'purchase.order_2')]").click()   // View quoation 
+        cy.xpath("//tr[contains(@data-id,'purchase.order_2')]").click()   // View quoation1
         cy.xpath("//button[contains(@class,'edit')]").click()                //edit mode
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:first-child>td:nth-child(13)").click()
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:first-child>td:nth-child(13)").type('120')
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(13)").type('130')
         cy.wait(1000)
-        cy.xpath("//button[contains(.,'Save')]").click()        //SAVE Quotation
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(13)").click()
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(13)").type('140')
+        cy.wait(1000)
+        cy.xpath("//button[contains(.,'Save')]").click()        //SAVE Quotation1
+
         cy.wait(1000)
         cy.xpath("(//span[contains(.,'Orders')])[1]").click()            //Orders
         cy.xpath("(//a[contains(.,'Notesheet')])[1]").click()   //orders menu
