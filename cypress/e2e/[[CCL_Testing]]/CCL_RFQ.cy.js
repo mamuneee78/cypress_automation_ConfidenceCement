@@ -15,8 +15,8 @@ describe("RFQ", function(){
         cy.xpath("//button[contains(.,'New')]").click()         //New 
         cy.get("#purchase_request_ids").type('PR/0000').type('{Enter}')
 
-        cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:first-child>td:nth-child(7)").type('110')
-        cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:nth-child(2)>td:nth-child(7)").type('130')
+        cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:first-child>td:nth-child(7)").type('100')
+        cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:nth-child(2)>td:nth-child(7)").type('80')
         cy.xpath("//span[contains(.,'Confirm')]").click()
         cy.xpath("//span[contains(.,'Go-back')]").should('have.text', 'Go-back')
 
