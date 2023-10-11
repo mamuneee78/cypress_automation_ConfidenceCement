@@ -1,6 +1,7 @@
 describe("PO Creation", function(){
 
     it("visit", function(){
+
         cy.viewport(1280, 720)
         cy.visit('http://10.10.16.131:9090/web/login')     //url 
         cy.get('#login').type('data_migration')       // user input
@@ -57,6 +58,7 @@ describe("PO Creation", function(){
         cy.get('[name="button_send_for_amendment"] > span').should('have.text', 'Send for Amendment')
         cy.screenshot()
 
+  
 
         
 

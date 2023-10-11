@@ -1,6 +1,7 @@
 describe("SliderTest", function(){
 
     it("visit", function(){
+        for (let i = 0; i < 5; i++) {
         cy.viewport(1920, 1080)
         cy.visit('https://demoqa.com/slider')     //url 
         cy.xpath("//input[@type='range']")
@@ -11,7 +12,7 @@ describe("SliderTest", function(){
          cy.xpath("//input[@type='range']")
          .invoke('val', 95)
 
-
+        }
 
 
 

@@ -13,6 +13,7 @@ describe("Comparative Statement", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Comparative Statement')]").click()  //CS
         cy.wait(1000)
+        for (let i = 0; i < 2; i++) {       //Repeat run the test 
         cy.xpath("//button[contains(.,'New')]").click()         //New 
         cy.wait(1000)
         cy.get("#request_for_quotation_id").type('RFQ/00').type('{Enter}')   // RFQ select
@@ -36,12 +37,10 @@ describe("Comparative Statement", function(){
         cy.xpath("//span[contains(.,'Amendment')]").should('have.text', 'Amendment')   //assertion
         cy.wait(2000)
         cy.xpath("(//a[contains(.,'Comparative Statement')])[1]").click()    //back to CS list
+        cy.wait(1000)
+
+        }
         
-
-
-
-
-
 
     })
 })

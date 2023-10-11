@@ -13,9 +13,12 @@ describe("Quotation", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Note sheet')]").click()  //NoteSheet
         cy.wait(1000)
+        for (let i = 0; i < 2; i++) {       //Repeat run the test 
+        cy.wait(1000)
         cy.xpath("//button[contains(.,'New')]").click()         //New 
         cy.wait(1000)
         cy.get("#radio_field_1_rfq").click()
+        cy.wait(1000)
         cy.get("#radio_field_1_rfq").should('be.checked');
         cy.get("#rfq_id").type('RFQ/000').type('{Enter}')
         cy.wait(1000)
@@ -31,11 +34,12 @@ describe("Quotation", function(){
         cy.wait(1000)
         cy.xpath("(//span[contains(.,'Approve')])[1]").click()
         cy.xpath("//span[contains(.,'Close')]").should('have.text', 'Close')
+        cy.xpath("//a[contains(.,'Note sheet')]").click()
         
  
         
 
-
+        }
 
 
 

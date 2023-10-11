@@ -15,12 +15,14 @@ describe("Local-PO(CS)", function(){
         cy.xpath("//button[contains(.,'New')]").click()         //New 
         cy.wait(1000)
         cy.get("#purchase_base").select('Comparative Statement')    // PO base select
-        cy.wait(2000)
+        cy.wait(1000)
         cy.get("#partner_id").type('DreamIT Ltd').type('{Enter}')         //Vendor select
+        cy.wait(1000)
         cy.get("#rfq_id").click()
         cy.get("#rfq_id").type('RFQ/00').type('{Enter}')   //rfq select
         cy.wait(1000)
         cy.get("#cs_ids").click()
+        cy.wait(1000)
         cy.get("#cs_ids").type('CS-2023/0').type('{Enter}')   //cs select
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Submit')]").click()        
