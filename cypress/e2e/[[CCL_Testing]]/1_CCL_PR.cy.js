@@ -32,6 +32,7 @@ it('visit', function(){
     //cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:first-child>td:first-child").type('Lexus Biscuits')
     cy.wait(1000)
     cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:first-child>td:nth-child(5)").clear().type('5') 
+    cy.wait(1000)
     cy.xpath("//a[contains(.,'Add a line')]").click()
     cy.wait(1000)
     //Pendrive
