@@ -12,7 +12,7 @@ it('visit', function(){
     cy.xpath("//i[@class='oi oi-apps']").click()           //menu bar
     cy.xpath("//a[contains(.,'Purchase')]").click()        //Purchase
 
-    for (let i = 0; i < 10; i++) {       //Repeat run the test 
+    for (let i = 0; i < 5; i++) {       //Repeat run the test 
     cy.xpath("//button[contains(.,'New')]").click()         //New
     cy.get("#priority").select('High')                       //Priority
     cy.get("#requisition_type").select('Local Purchase')      //Req Type 

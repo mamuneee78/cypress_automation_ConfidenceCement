@@ -47,18 +47,11 @@ describe("Materials Requisition", function(){
          cy.wait(1000)
          cy.get("[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:nth-child(2)>td:nth-child(4)").type('{Enter}')
          cy.get("[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:nth-child(2)>td:nth-child(5)").clear().type('5')
-        cy.xpath("//span[contains(.,'Confirm')]").click()
+         cy.xpath("//span[contains(.,'Send to Approver')]").click()
+         cy.wait(1000)
+         cy.xpath("//span[contains(.,'Confirm')]").click()
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Cancel')]").should('have.text', 'Cancel')
-
-    
-
-        
-
-
-  
-
-        
 
 
 

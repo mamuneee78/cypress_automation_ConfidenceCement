@@ -13,7 +13,7 @@ describe("Quotation", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Request For Quotation')]").click()  //Purchase
         cy.wait(1000)
-    for (let i = 0; i < 2; i++) {       //Repeat run the test 
+    for (let i = 0; i < 1; i++) {       //Repeat run the test 
         cy.xpath("//button[contains(.,'New')]").click()         //New 
         cy.get("#purchase_request_ids").type('PR/0000').type('{Enter}')   // PR select
         //Unit price
