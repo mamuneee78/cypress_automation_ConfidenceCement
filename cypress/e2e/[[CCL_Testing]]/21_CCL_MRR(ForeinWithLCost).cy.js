@@ -21,6 +21,8 @@ describe("MRR Foreign with Landed cost", function(){
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Send For Review')]").click()        
         cy.wait(1000)
+        cy.xpath("//button[contains(.,'Ok')]").click()
+        cy.wait(1000)
         // Landed cost flow
         cy.xpath("(//span[contains(.,'Operations')])[1]").click()    // dropdown
         cy.wait(1000)

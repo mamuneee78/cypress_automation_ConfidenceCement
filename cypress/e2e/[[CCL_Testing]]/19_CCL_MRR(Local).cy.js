@@ -21,6 +21,7 @@ describe("MRR Local", function(){
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Send For Review')]").click()        
         cy.wait(1000)
+        cy.xpath("//button[contains(.,'Ok')]").click()
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Reviewed')]").should('have.text', 'Reviewed')
         cy.xpath("//span[contains(.,'Reviewed')]").click()        
