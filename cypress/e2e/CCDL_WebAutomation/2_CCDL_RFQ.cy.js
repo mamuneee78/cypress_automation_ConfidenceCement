@@ -3,8 +3,8 @@ describe("PO Creation", function(){
     it("visit", function(){
         cy.viewport(1480, 720)
         cy.visit('http://10.10.16.131:9090/web/login')     //url 
-        cy.get('#login').type('data_migration')       // user input
-        cy.get('#password').type('123456')       // password input
+        cy.get('#login').type('devops')       // user input
+        cy.get('#password').type('1234')       // password input
         // cy.wait(2000)
         cy.get('.btn').click()                // loggin button click
         cy.wait(2000)
@@ -17,6 +17,7 @@ describe("PO Creation", function(){
         cy.xpath("//button[@class='btn btn-primary o_list_button_add']").click() //create RFQ
         cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[2]").click().type('{Enter}') //PR no select
         cy.get('.o_form_buttons_edit > .btn-primary').click()     //save RFQ
+        
         
 
 
