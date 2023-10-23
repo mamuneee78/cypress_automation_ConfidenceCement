@@ -3,7 +3,7 @@ describe("Comparative Statement", function(){
 it('visit', function(){
 
     //for (let i = 0; i < 2; i++) {       //Repeat run the test 
-    cy.viewport(1920, 1200)
+    cy.viewport(1200, 660)
     cy.visit('http://192.168.3.187:7071/web/login')     //url 
     cy.get('#login').type('qa_user')       // user input
     cy.get('#password').type('1234')       // password input
@@ -18,7 +18,9 @@ it('visit', function(){
     cy.get("#requisition_type").select('Local Purchase')      //Req Type 
     cy.wait(1000)
     //IT Budget
-    cy.get("#budget_id").click().type('DevOps Budget - IT-Products - CCL Fiscal Year 2023-2024 (20000000.0) (0.0)')     //Req Type 
+    cy.get("#budget_id").click().type('IT-Products')     //Req Type 
+    cy.wait(1000)
+    cy.get("#budget_id").type('{Enter}')
     //Entertainment budget
     //cy.get("#budget_id").click().type('DevOps Budget - Entertainment - CCL Fiscal Year 2023-2024 (10000000.0) (0.0)')     //Req Type 
     //Add a line
@@ -33,7 +35,7 @@ it('visit', function(){
     cy.wait(1000)
     cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:first-child>td:nth-child(5)").clear().type('5') 
     cy.wait(1000)
-    cy.xpath("//a[contains(.,'Add a line')]").click()
+    cy.xpath("//a[contains(.,'Add a line')]").click() //line 2
     cy.wait(1000)
     //Pendrive
     cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:nth-child(2)>td:first-child").type('Pendrive 32GB')
