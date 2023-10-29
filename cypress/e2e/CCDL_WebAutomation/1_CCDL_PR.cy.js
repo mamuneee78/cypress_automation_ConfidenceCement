@@ -12,12 +12,16 @@ describe("PO Creation", function(){
     
         cy.get('.o_navbar_apps_menu > .dropdown-toggle > .fa').click()           //menu bar
         cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
-        cy.get('.o_list_button_add').click()     //create
+
+        for (let i = 0; i < 5; i++) {       //Repeat run the test 
+        cy.xpath("//button[contains(.,'Create')]").click()     //create
         cy.wait(1000)
         cy.xpath("//div[@name='budget_line_id']//input").click().type('{enter}')   //budget line1
         cy.xpath("//div[@name='budget_line_id']//input").type('{enter}')   //budget line1
         // cy.wait(1000)
-        cy.xpath("//div[@name='assigned_to']//input").type('devops')       // approver select
+        cy.xpath("//div[@name='assigned_to']//input").type('Dev')       // approver select
+        // cy.wait(1000)
+        cy.xpath("//div[@name='assigned_to']//input").type('{Enter}')       // approver select
         cy.xpath("//select[@name='priority']").select('High')                      //priority
         cy.xpath("//select[@name='requirement_for']").select('Operation')          //Requirement for
         cy.xpath("//select[@name='requisition_type']").select('Local')             //Requisition type
@@ -36,7 +40,7 @@ describe("PO Creation", function(){
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('Fly_Ash').type('{enter}')
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('100')
                             //add line 2
-        cy.xpath("(//a[contains(.,'Add a line')])[1]").click()                     //add line 2
+       // cy.xpath("(//a[contains(.,'Add a line')])[1]").click()                     //add line 2
         
                               //Genaral Products
         // cy.wait(1000)
@@ -45,10 +49,10 @@ describe("PO Creation", function(){
         // cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(3)").type('5')
         
                           //WeightScale products
-        cy.wait(1000)
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:first-child").type('Clinker').type('{enter}')
-        cy.wait(1000)
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(3)").type('100')
+        // cy.wait(1000)
+        // cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:first-child").type('Clinker').type('{enter}')
+        // cy.wait(1000)
+        // cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(3)").type('100')
 
         cy.get('.o_form_buttons_edit > .btn-primary').click() 
         //cy.screenshot()
@@ -71,6 +75,8 @@ describe("PO Creation", function(){
         cy.wait(1000)
         cy.get('[name="button_send_for_amendment"] > span').should('have.text', 'Send for Amendment')
         //cy.screenshot()
+
+        }
 
   
 
