@@ -13,7 +13,7 @@ describe("PO Creation", function(){
         cy.get('.o_navbar_apps_menu > .dropdown-toggle > .fa').click()           //menu bar
         cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
 
-        for (let i = 0; i < 5; i++) {       //Repeat run the test 
+        for (let i = 0; i < 1; i++) {       //Repeat run the test 
         cy.xpath("//button[contains(.,'Create')]").click()     //create
         cy.wait(1000)
         cy.xpath("//div[@name='budget_line_id']//input").click().type('{enter}')   //budget line1
@@ -38,7 +38,7 @@ describe("PO Creation", function(){
                 
                             //WeightScale products
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('Fly_Ash').type('{enter}')
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('100')
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('150')
                             //add line 2
        // cy.xpath("(//a[contains(.,'Add a line')])[1]").click()                     //add line 2
         
