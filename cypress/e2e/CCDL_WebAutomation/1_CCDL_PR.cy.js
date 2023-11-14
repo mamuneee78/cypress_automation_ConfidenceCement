@@ -3,15 +3,15 @@ describe("PR Creation", function(){
     it("visit", function(){
 
         cy.viewport(1200, 660)
-       // cy.visit('http://10.10.16.131:9090/web/login')     //url   Test server
-        cy.visit('http://192.168.3.224:9090/web/login')     //url   prestage server
+       //cy.visit('http://10.10.16.131:9090/web/login')     //url   Test server
+      cy.visit('http://192.168.3.224:9090/web/login')     //url   prestage server
                       //Test credential
         // cy.get('#login').type('devops')       // user input
         // cy.get('#password').type('1234')       // password input
         
         //Prestage credential
         cy.get('#login').type('data_migration')       // user input
-        cy.get('#password').type('1234')       // password input
+        cy.get('#password').type('1234')       // password input 
         // cy.wait(2000)
         cy.get('.btn').click()                // loggin button click
         cy.wait(5000)
@@ -44,11 +44,11 @@ describe("PR Creation", function(){
         // cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('2')
                 
                             //WeightScale products
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('Fly_Ash')
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('Fly_Ash') //Fly_Ash
         cy.wait(1000)
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('{Enter}')
         cy.get('[data-name="product_id"]').click()
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('150')
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('200')
                             //add line 2
        // cy.xpath("(//a[contains(.,'Add a line')])[1]").click()                     //add line 2
         
