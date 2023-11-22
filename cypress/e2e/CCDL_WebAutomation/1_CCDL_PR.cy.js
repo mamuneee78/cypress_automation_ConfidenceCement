@@ -20,7 +20,7 @@ describe("PR Creation", function(){
         cy.wait(1000)
         cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
         cy.wait(1000)
-        for (let i = 0; i < 1; i++) {       //Repeat run the test 
+        for (let i = 0; i < 2; i++) {       //Repeat run the test 
         cy.xpath("//button[contains(.,'Create')]").click()     //create
         cy.wait(1000)
         cy.xpath("//div[@name='budget_line_id']//input").click().type('{enter}')   //budget line1
@@ -31,7 +31,7 @@ describe("PR Creation", function(){
         cy.xpath("//div[@name='assigned_to']//input").type('{Enter}')       // approver select
         cy.xpath("//select[@name='priority']").select('High')                      //priority
         cy.xpath("//select[@name='requirement_for']").select('Operation')          //Requirement for
-        cy.xpath("//select[@name='requisition_type']").select('Local')             //Requisition type
+        cy.xpath("//select[@name='requisition_type']").select('Site Purchase')       //Site Purchase or  Local     //Requisition type
         cy.xpath("//select[@name='purchase_type']").select('New Purchase')         //purchase type
         cy.wait(1000)
         //const filePath = ''
@@ -44,11 +44,11 @@ describe("PR Creation", function(){
         // cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('2')
                 
                             //WeightScale products
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('Fly_Ash') //Fly_Ash
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('A4 paper ( 80)') //Fly_Ash
         cy.wait(1000)
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('{Enter}')
         cy.get('[data-name="product_id"]').click()
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('200')
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('20')
                             //add line 2
        // cy.xpath("(//a[contains(.,'Add a line')])[1]").click()                     //add line 2
         
@@ -63,21 +63,22 @@ describe("PR Creation", function(){
         // cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:first-child").type('Clinker').type('{enter}')
         // cy.wait(1000)
         // cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(3)").type('100')
-
-        cy.get('.o_form_buttons_edit > .btn-primary').click() 
-        //cy.screenshot()
-        cy.xpath("//span[contains(.,'Send To HOD')]").should('have.text', 'Send To HOD')
+        cy.xpath("//button[contains(.,'Save')]").click()
         cy.wait(1000)
+        cy.xpath("//span[contains(.,'Send To HOD')]").click() 
         //cy.screenshot()
-        cy.get('[name="button_hod_approve"] > span').click()
-        cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval')
+        cy.xpath("//span[contains(.,'Send To HOD')]").should('have.text', 'Send To HOD')  //send to hod
         cy.wait(1000)
         //cy.screenshot()
         cy.get('[name="button_scm_approve"] > span').click()
-        cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval')
+        cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval')  // hod to gm
         cy.wait(1000)
         //cy.screenshot()
-        cy.get('[name="button_pm_approve"] > span').click()
+        cy.get('[name="button_gm_approve"] > span').click()
+        cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval') //gm to scm
+        cy.wait(2000)
+        //cy.screenshot()
+        cy.xpath("(//span[contains(.,'Approve')])[3]").click()           //scm approved 
         cy.xpath("(//span[contains(.,'Approve')])[3]").should('have.text', 'Approve')
         cy.wait(1000)
         //cy.screenshot()
