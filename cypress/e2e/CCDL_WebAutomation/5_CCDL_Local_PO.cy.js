@@ -41,15 +41,15 @@ describe("CASH PO", function(){
         cy.wait(1000)
         cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[5]").type('A & Company')    //vendor select
         cy.wait(1000)
-        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[6]").click().type('Test02_Agreement')   //agreement no
+        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[6]").click().type('Test Agrmt')   //agreement no
         cy.wait(1000)
         cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[7]").type('Main plant')   //Cost Head
         cy.wait(1000)
         cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[7]").type('{Enter}')   //Cost Head
         cy.wait(1000)
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(1)>td:nth-child(12)").type('20')
-        // cy.xpath("//a[contains(.,'Products')]").click()
-        // cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(9)").type('15')
+        cy.xpath("//a[contains(.,'Products')]").click()
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(12)").type('15')
         cy.get('.o_form_buttons_edit > .btn-primary').click()     //save Local PO
 
         cy.get('[name="send_for_scm_approval"] > span').click()
