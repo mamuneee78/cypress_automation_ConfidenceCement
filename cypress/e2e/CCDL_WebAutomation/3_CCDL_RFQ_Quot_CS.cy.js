@@ -1,10 +1,10 @@
 describe("RFQ Quot CS", function(){
 
     it("visit", function(){
-        cy.viewport(1920, 1200)
+        cy.viewport(1200, 660)
         cy.visit('http://10.10.16.131:9090/web/login')     //url 
         cy.get('#login').type('data_migration')       // user input
-        cy.get('#password').type('123456')       // password input
+        cy.get('#password').type('1234')       // password input
         // cy.wait(2000)
         cy.get('.btn').click()                // loggin button click
         cy.wait(2000)
@@ -53,14 +53,28 @@ describe("RFQ Quot CS", function(){
         cy.xpath("//a[contains(.,'Comparative Statement')]").click()   //orders menu CS
         cy.get('.o_list_button_add').click()                      //Create CS
         cy.wait(1000)
-        cy.xpath("(//input[@autocomplete='off'])[1]").click().type('{Enter}')   // RFQ No select
+        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[1]").click().type('CCDL/2023/RF')   // RFQ No select
+        cy.wait(1000)
+        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[1]").type('{Enter}')   // RFQ No select
         cy.wait(1000)
         cy.xpath("(//input[@autocomplete='off'])[2]").type('Test Automation')   // Response Name typing
-        cy.screenshot()
+        //cy.screenshot()
         cy.xpath("//button[contains(.,'Save')]").click()        //SAVE CS
         cy.wait(1000)
+        //cy.xpath("//span[contains(.,'Comparative Statement')]").click()     // CS View 
+
+        cy.get('[name="action_send_to_scm_hod"] > span').click()     // scm
+        cy.wait(1000)
+        cy.get('[name="action_send_to_gm"] > span').click()             //hscm
+        cy.wait(1000)
         cy.xpath("//span[contains(.,'Comparative Statement')]").click()     // CS View 
-        cy.screenshot()
+        cy.wait(1000)
+        cy.get('[name="action_send_to_dmd"] > span')                 //gm
+        cy.wait(2000)
+        cy.get('[name="action_send_to_md"] > span')                 //DMD
+        cy.wait(1000)
+        cy.get('[name="action_approve"] > span')                   //CEO
+        //cy.screenshot()
         // cy.wait(1000)
         // cy.xpath("table[id='vendor_selection_table']>tbody>tr:last-child>td:nth-child(2)").click()   //CS vendor selection
         // cy.wait(3000)

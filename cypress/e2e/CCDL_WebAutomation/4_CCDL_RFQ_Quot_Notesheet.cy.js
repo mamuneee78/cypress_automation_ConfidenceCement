@@ -4,7 +4,7 @@ describe("RFQ Quot NS", function(){
         cy.viewport(1920, 1200)
         cy.visit('http://10.10.16.131:9090/web/login')     //url 
         cy.get('#login').type('data_migration')       // user input
-        cy.get('#password').type('123456')       // password input
+        cy.get('#password').type('1234')       // password input
         // cy.wait(2000)
         cy.get('.btn').click()                // loggin button click
         cy.wait(2000)
@@ -31,7 +31,7 @@ describe("RFQ Quot NS", function(){
         cy.xpath("//button[contains(@class,'edit')]").click()                //edit mode
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:first-child>td:nth-child(13)").click()
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:first-child>td:nth-child(13)").type('120')
-        cy.wait(1000)
+        cy.get('[data-name="product_id"]').click()
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(13)").click()
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(13)").type('140')
         cy.wait(1000)
@@ -48,6 +48,8 @@ describe("RFQ Quot NS", function(){
         cy.wait(1000)
         cy.xpath("//textarea[@name='subject']").type('Test Subject')            // subject type 
         cy.xpath("//textarea[@name='body']").type('Test Body')            // Body type
+        cy.xpath("//button[contains(.,'Save')]").click()            //NS save 
+
         cy.xpath("//span[contains(.,'Send for Approval')]").should('have.text', 'Send for Approval')
         cy.xpath("//span[contains(.,'Send for Approval')]").click()
         cy.wait(1000)
@@ -56,10 +58,16 @@ describe("RFQ Quot NS", function(){
         cy.screenshot()
         cy.xpath("(//span[contains(.,'Approve')])[1]").click()
         cy.wait(1000)
-        cy.xpath("(//span[contains(.,'Approve')])[2]").click()
+        cy.get('[name="action_hscm_approve"] > span').click()
+        cy.wait(1000)
+        cy.get('[name="action_dmd_approve"] > span').click()
+        cy.get('[name="action_done"] > span').click()
 
         cy.xpath("//span[contains(.,'Final Cancel')]").should('have.text', 'Final Cancel')
         cy.screenshot()
+        cy.wait(1000)
+        cy.xpath("//span[contains(.,'Print')]").click()
+        cy.xpath("//a[contains(.,'Notesheet Report')]").click()
 
 
 

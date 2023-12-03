@@ -20,7 +20,7 @@ describe("PR Creation", function(){
         cy.wait(1000)
         cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
         cy.wait(1000)
-        for (let i = 0; i < 1; i++) {       //Repeat run the test 
+        for (let i = 0; i < 2; i++) {       //Repeat run the test 
         cy.xpath("//button[contains(.,'Create')]").click()     //create
         cy.wait(1000)
         cy.xpath("//div[@name='budget_line_id']//input").click().type('{enter}')   //budget line1
@@ -31,7 +31,7 @@ describe("PR Creation", function(){
         cy.xpath("//div[@name='assigned_to']//input").type('{Enter}')       // approver select
         cy.xpath("//select[@name='priority']").select('High')                      //priority
         cy.xpath("//select[@name='requirement_for']").select('Operation')          //Requirement for
-        cy.xpath("//select[@name='requisition_type']").select('Local')       //Site Purchase or  Local     //Requisition type
+        cy.xpath("//select[@name='requisition_type']").select('Site Purchase')       //Site Purchase or  Local     //Requisition type
         cy.xpath("//select[@name='purchase_type']").select('New Purchase')         //purchase type
         cy.wait(1000)
         //const filePath = ''
