@@ -31,7 +31,7 @@ describe("PR Creation", function(){
         cy.xpath("//div[@name='assigned_to']//input").type('{Enter}')       // approver select
         cy.xpath("//select[@name='priority']").select('High')                      //priority
         cy.xpath("//select[@name='requirement_for']").select('Operation')          //Requirement for
-        cy.xpath("//select[@name='requisition_type']").select('Site Purchase')       //Site Purchase or  Local     //Requisition type
+        cy.xpath("//select[@name='requisition_type']").select('Local')       //Site Purchase or  Local     //Requisition type
         cy.xpath("//select[@name='purchase_type']").select('New Purchase')         //purchase type
         cy.wait(1000)
         //const filePath = ''
@@ -44,11 +44,11 @@ describe("PR Creation", function(){
         // cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('2')
                 
                             //WeightScale products
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('fly ash(WS)') //fly ash(WS)// A4 paper ( 80)
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('MT_Testing') //fly ash(WS)// A4 paper ( 80)
         cy.wait(1000)
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('{Enter}')
         cy.get('[data-name="product_id"]').click()
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('200')
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('20')
                             //add line 2
        cy.xpath("(//a[contains(.,'Add a line')])[1]").click()                     //add line 2
         
@@ -60,7 +60,7 @@ describe("PR Creation", function(){
         
                           //WeightScale products
         cy.wait(1000)
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:first-child").type('clinker(ws)').type('{enter}')
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:first-child").type('clinker(ws)').type('{enter}')  //Ounce_Product clinker(ws), MT_Testing
         cy.wait(1000)
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(3)").type('100')
         cy.xpath("//button[contains(.,'Save')]").click()
