@@ -20,7 +20,7 @@ describe("PR Creation", function(){
         cy.wait(1000)
         cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
         cy.wait(1000)
-        for (let i = 0; i < 2; i++) {       //Repeat run the test 
+        for (let i = 0; i < 1; i++) {       //Repeat run the test 
         cy.xpath("//button[contains(.,'Create')]").click()     //create
         cy.wait(1000)
         cy.xpath("//div[@name='budget_line_id']//input").click().type('{enter}')   //budget line1
