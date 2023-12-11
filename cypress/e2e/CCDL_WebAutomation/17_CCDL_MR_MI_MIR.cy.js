@@ -1,7 +1,9 @@
+const URL = require('./Login_URL.json')
+
 describe("MR and MI", ()=> {
         beforeEach('login', ()=>{
         cy.viewport(1200, 660)
-        cy.visit('http://10.10.16.131:9090/web/login')     //url   Test server
+        cy.visit(URL.TestURL)   //url   Test server
         cy.get('#login').type('data_migration')       // user input
         cy.get('#password').type('1234')       // password input
         cy.get('.btn').click()                // loggin button click

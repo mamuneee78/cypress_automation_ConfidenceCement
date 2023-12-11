@@ -1,9 +1,10 @@
+const URL = require('./Login_URL.json')
+
 describe("CASH PO", function(){
 
     it("visit", function(){
         cy.viewport(1920, 1080)
-        cy.visit('http://10.10.16.131:9090/web/login')     //url   Test server
-       // cy.visit('http://192.168.3.224:9090/web/login')     //url   prestage server
+        cy.visit(URL.TestURL)  //url
         
                      //Prestage credential
         cy.get('#login').type('data_migration')       // user input
@@ -44,8 +45,8 @@ describe("CASH PO", function(){
         cy.xpath("(//input[@autocomplete='off'])[6]").type('{Enter}')   //cost head  
         cy.wait(1000)
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(1)>td:nth-child(12)").type('20')
-        cy.xpath("//a[contains(.,'Products')]").click()
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(12)").type('15')
+        // cy.xpath("//a[contains(.,'Products')]").click()
+        // cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(12)").type('15')
         cy.get('.o_form_buttons_edit > .btn-primary').click()     //save Local PO
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Request Approval')]").click()

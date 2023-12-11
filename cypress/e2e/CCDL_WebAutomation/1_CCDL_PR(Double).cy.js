@@ -1,9 +1,10 @@
+const URL = require('./Login_URL.json')
 describe("PR Creation", function(){
 
     it("visit", function(){
 
         cy.viewport(1200, 660)
-       cy.visit('http://10.10.16.131:9090/web/login')     //url   Test server
+       cy.visit(URL.TestURL)     //url   Test server
       //cy.visit('http://192.168.3.224:9090/web/login')     //url   prestage server
                       //Test credential
         // cy.get('#login').type('devops')       // user input

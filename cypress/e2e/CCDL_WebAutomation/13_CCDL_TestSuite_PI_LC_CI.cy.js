@@ -1,8 +1,9 @@
+const URL = require('./Login_URL.json')
+
 describe('Test suit', ()=> {
     beforeEach('login', ()=>{
        cy.viewport(1200, 660)
-       cy.visit('http://10.10.16.131:9090/web/login')     //url   Test server
-      // cy.visit('http://192.168.3.224:9090/web/login')     //url   prestage server
+       cy.visit(URL.TestURL)   //url   prestage server
        
                     //Prestage credential
        cy.get('#login').type('data_migration')       // user input

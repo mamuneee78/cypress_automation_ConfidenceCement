@@ -1,10 +1,10 @@
 const URL = require('./Login_URL.json')
 
-escribe("CASH PO", function(){
+describe("CASH PO", function(){
 
     it("visit", function(){
         cy.viewport(1920, 1080)
-        cy.visit(URL.TestURL)  //url   prestage server
+        cy.visit(URL.TestURL) //URL
         
                      //Prestage credential
         cy.get('#login').type('data_migration')       // user input
@@ -35,22 +35,18 @@ escribe("CASH PO", function(){
         //cy.xpath("//span[contains(.,'Orders')]").click()            //Orders
         // cy.wait(2000)
         
-        cy.xpath("//select[@name='purchase_base']").select('Agreement & Notesheet')  //Purchase base
+        cy.xpath("//select[@name='purchase_base']").select('Comparative Statement')  //Purchase base
         cy.wait(1000)
-        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[4]").type('CCDL/2023/PR0')   //PR no
-        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[4]").type('{Enter}')   //PR no
+        cy.xpath("(//input[@autocomplete='off'])[3]").type('CCDL/2023/CS')   //CS no
+        cy.xpath("(//input[@autocomplete='off'])[3]").type('{Enter}')   //NS no
         cy.wait(1000)
-        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[5]").type('A & Company')    //vendor select
+        cy.xpath("(//input[@autocomplete='off'])[6]").type('Main Plant')   //cost head 
         cy.wait(1000)
-        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[6]").click().type('Test Agrmt')   //agreement no
-        cy.wait(1000)
-        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[7]").type('Main plant')   //Cost Head
-        cy.wait(1000)
-        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[7]").type('{Enter}')   //Cost Head
+        cy.xpath("(//input[@autocomplete='off'])[6]").type('{Enter}')   //cost head  
         cy.wait(1000)
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(1)>td:nth-child(12)").type('20')
-        //cy.xpath("//a[contains(.,'Products')]").click()
-        //cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(12)").type('15')
+        cy.xpath("//a[contains(.,'Products')]").click()
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(12)").type('15')
         cy.get('.o_form_buttons_edit > .btn-primary').click()     //save Local PO
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Request Approval')]").click()

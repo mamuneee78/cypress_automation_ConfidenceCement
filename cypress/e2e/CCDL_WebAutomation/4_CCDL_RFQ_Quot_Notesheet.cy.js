@@ -1,8 +1,10 @@
+const URL = require('./Login_URL.json')
+
 describe("RFQ Quot NS", function(){
 
     it("visit", function(){
         cy.viewport(1920, 1200)
-        cy.visit('http://10.10.16.131:9090/web/login')     //url 
+        cy.visit(URL.TestURL)    //url 
         cy.get('#login').type('data_migration')       // user input
         cy.get('#password').type('1234')       // password input
         // cy.wait(2000)
