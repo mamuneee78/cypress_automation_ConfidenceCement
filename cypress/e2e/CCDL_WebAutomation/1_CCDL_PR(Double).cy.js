@@ -21,7 +21,7 @@ describe("PR Creation", function(){
         cy.wait(1000)
         cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
         cy.wait(1000)
-        for (let i = 0; i < 1; i++) {       //Repeat run the test 
+        for (let i = 0; i < 3; i++) {       //Repeat run the test 
         cy.xpath("//button[contains(.,'Create')]").click()     //create
         cy.wait(1000)
         cy.xpath("//div[@name='budget_line_id']//input").click().type('{enter}')   //budget line1
@@ -69,11 +69,11 @@ describe("PR Creation", function(){
         cy.xpath("//span[contains(.,'Send To HOD')]").click() 
         //cy.screenshot()
         cy.xpath("//span[contains(.,'Send To HOD')]").should('have.text', 'Send To HOD')  //send to hod
-        cy.wait(1000)
+        cy.wait(2000)
         //cy.screenshot()
         cy.xpath("(//span[contains(.,'Request Approval')])[3]").click()
         cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval')  // hod to gm
-        cy.wait(1000)
+        cy.wait(2000)
         //cy.screenshot()
         cy.get('[name="button_gm_approve"] > span').click()
         cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval') //gm to scm
@@ -81,11 +81,8 @@ describe("PR Creation", function(){
         //cy.screenshot()
         cy.xpath("(//span[contains(.,'Approve')])[3]").click()           //scm approved 
         cy.xpath("(//span[contains(.,'Approve')])[3]").should('have.text', 'Approve')
-        cy.wait(1000)
-        //cy.screenshot()
-        cy.get('[name="button_done"] > span').click()
-        cy.wait(1000)
-        cy.get('[name="button_send_for_amendment"] > span').should('have.text', 'Send for Amendment')
+        cy.wait(2000)
+        cy.xpath("//span[contains(.,'Send for Amendment')]").should('have.text', 'Send for Amendment')
         //cy.screenshot()
 
         }

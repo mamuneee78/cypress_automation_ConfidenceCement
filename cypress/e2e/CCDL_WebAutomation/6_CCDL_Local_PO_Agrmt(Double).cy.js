@@ -51,11 +51,12 @@ describe("CASH PO", function(){
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(1)>td:nth-child(12)").type('20')
         cy.xpath("//a[contains(.,'Products')]").click()
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(12)").type('15')
+        cy.wait(1000)
         cy.get('.o_form_buttons_edit > .btn-primary').click()     //save Local PO
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Request Approval')]").click()
         cy.wait(1000)
-        cy.xpath("//span[contains(.,'Send for GM Approval')]").click()
+        cy.get('[name="hscm_approved"]').click()
         cy.wait(1000)
         cy.get('[name="gm_approved"]').click()
         cy.wait(1000)

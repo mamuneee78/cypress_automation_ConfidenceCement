@@ -69,19 +69,19 @@ describe("PR Creation", function(){
         cy.xpath("//span[contains(.,'Send To HOD')]").click() 
         //cy.screenshot()
         cy.xpath("//span[contains(.,'Send To HOD')]").should('have.text', 'Send To HOD')  //send to hod
-        cy.wait(1000)
+        cy.wait(2000)
         //cy.screenshot()
         cy.xpath("(//span[contains(.,'Request Approval')])[3]").click()
         cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval')  // hod to gm
-        cy.wait(1000)
-        //cy.screenshot()
-        cy.get('[name="button_gm_approve"] > span').click()
-        cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval') //gm to scm
         cy.wait(2000)
         //cy.screenshot()
-        cy.xpath("(//span[contains(.,'Approve')])[3]").click()           //scm approved 
+        cy.xpath("(//span[contains(.,'Request Approval')])[1]").click()   //gm
+        cy.xpath("(//span[contains(.,'Request Approval')])[1]").should('have.text', 'Request Approval') //gm to scm
+        cy.wait(2000)
+        //cy.screenshot()
+        cy.get('[name="button_done"] > span').click()           //scm approved 
         cy.xpath("(//span[contains(.,'Approve')])[3]").should('have.text', 'Approve')
-        cy.wait(1000)
+        cy.wait(2000)
         //cy.screenshot()
         cy.get('[name="button_done"] > span').click()
         cy.wait(1000)

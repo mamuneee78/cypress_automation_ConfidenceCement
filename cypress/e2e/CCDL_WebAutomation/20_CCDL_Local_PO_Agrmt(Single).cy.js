@@ -1,10 +1,10 @@
 const URL = require('./Login_URL.json')
 
-escribe("CASH PO", function(){
+describe("Local PO", function(){
 
     it("visit", function(){
         cy.viewport(1920, 1080)
-        cy.visit(URL.TestURL)  //url   prestage server
+        cy.visit(URL.TestURL)   //url   prestage server
         
                      //Prestage credential
         cy.get('#login').type('data_migration')       // user input
@@ -54,13 +54,13 @@ escribe("CASH PO", function(){
         cy.get('.o_form_buttons_edit > .btn-primary').click()     //save Local PO
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Request Approval')]").click()
-        cy.wait(1000)
+        cy.wait(2000)
         cy.xpath("//span[contains(.,'Send for GM Approval')]").click()
-        cy.wait(1000)
+        cy.wait(2000)
         cy.get('[name="gm_approved"]').click()
-        cy.wait(1000)
+        cy.wait(2000)
         cy.get('[name="button_confirm"] > span').click()
-        cy.wait(1000)
+        cy.wait(2000)
         cy.get('[name="button_approve"] > span').click()
 
         cy.get('[name="cancel_purchase_after_approval"] > span').should('have.text', 'Final Cancel')
