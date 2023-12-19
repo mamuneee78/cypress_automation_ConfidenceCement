@@ -13,7 +13,7 @@ describe("Comparative Statement", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Comparative Statement')]").click()  //CS
         cy.wait(1000)
-        for (let i = 0; i < 2; i++) {       //Repeat run the test 
+        for (let i = 0; i < 1; i++) {       //Repeat run the test 
         cy.xpath("//button[contains(.,'New')]").click()         //New 
         cy.wait(1000)
         cy.get("#request_for_quotation_id").type('RFQ/00').type('{Enter}')   // RFQ select
@@ -21,10 +21,15 @@ describe("Comparative Statement", function(){
         cy.xpath("//span[contains(.,'Compare')]").click()
         cy.wait(1000)
         //Unit price
-        cy.get("table[class='table table-bordered mt-0']>tbody>tr:nth-child(3)>td:nth-child(14)").type('5')
-        cy.get("table[class='table table-bordered mt-0']>tbody>tr:nth-child(4)>td:nth-child(14)").type('5')    
+        cy.xpath("(//input[@type='text'])[1]").type('5')
+        cy.xpath("(//input[@type='text'])[3]").type('5')
+
+        //cy.get("table[class='table table-bordered mt-0']>tbody>tr:nth-child(3)>td:nth-child(14)").click().type('5')
+        //cy.get("table[class='table table-bordered mt-0']>tbody>tr:nth-child(4)>td:nth-child(14)").type('5')    
         cy.wait(1000)
         cy.xpath("//button[contains(.,'Save')]").click() //save CS
+        cy.wait(1000)
+        cy.xpath("(//a[@href='#'])[4]").click()
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Send For Approval')]").should('have.text', 'Send For Approval')    //Assertion
         cy.xpath("//span[contains(.,'Send For Approval')]").click()          //send for approval

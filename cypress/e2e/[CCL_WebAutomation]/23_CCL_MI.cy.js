@@ -9,7 +9,7 @@ describe("Material Issue", function(){
         cy.xpath("//i[@class='oi oi-apps']").click()           //menu bar
         cy.xpath("//a[contains(.,'Inventory')]").click()        //Purchase
         cy.wait(1000)
-        cy.xpath("(//span[contains(.,'Operations')])[2]").click()    // dropdown
+        cy.xpath("//span[contains(.,'Operations')]").click()    // dropdown
         cy.wait(1000)
         cy.wait(1000)
         cy.xpath("(//a[contains(.,'Material Issue')])[1]").click()

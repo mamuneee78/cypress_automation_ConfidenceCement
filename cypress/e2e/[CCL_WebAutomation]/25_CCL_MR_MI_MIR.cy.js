@@ -1,5 +1,5 @@
-describe("Materials Requisition", function(){
-    it('visit', function(){
+describe("MR_MI_MIR",()=>{
+    beforeEach('login', ()=>{
         cy.viewport(1200, 660)
         cy.visit('http://192.168.3.187:7071/web/login')     //url 
         cy.get('#login').type('qa_user')       // user input
@@ -10,7 +10,9 @@ describe("Materials Requisition", function(){
         cy.xpath("//a[contains(.,'Inventory')]").click()        //Purchase
         cy.wait(2000)
         cy.xpath("//span[contains(.,'Operations')]").click()    // dropdown
-        cy.wait(1000)
+    })
+
+    it('MR', ()=>{
         cy.xpath("//a[contains(.,'Material Requisition')]").click()
         cy.wait(2000)
         cy.xpath("//button[contains(.,'New')]").click()         //New 
@@ -52,8 +54,39 @@ describe("Materials Requisition", function(){
          cy.xpath("//span[contains(.,'Confirm')]").click()
          cy.wait(1000)
          cy.xpath("//span[contains(.,'Cancel')]").should('have.text', 'Cancel')
+    })
+    it('MI', ()=>{
+        cy.xpath("(//a[contains(.,'Material Issue')])[1]").click()
+        cy.wait(2000)
+        cy.xpath("//button[contains(.,'New')]").click()         //New 
+        cy.wait(1000)
+        cy.get("#requisition_id").type('MR00')      //MR select
+        cy.wait(1000)
+        cy.get("#requisition_id").type('{Enter}')
+        cy.wait(1000)
+        cy.xpath("//span[contains(.,'Approve')]").click()
+        cy.wait(2000)
+    })
+
+    it('MIR', ()=>{
+        cy.xpath("(//a[contains(.,'Material Issue Return')])[1]").click()
+        cy.wait(2000)
+        cy.xpath("//button[contains(.,'New')]").click()         //New 
+        cy.wait(1000)
+        cy.get("#material_issue_id").type('MI00')      //MI select
+        cy.wait(1000)
+        cy.get("#material_issue_id").type('{Enter}')
+        cy.wait(1000)
+        cy.xpath("//span[contains(.,'Send For Review')]").click()
+        cy.wait(1000)
+        cy.xpath("//span[contains(.,'Reviewed')]").click()
+        cy.wait(1000)
+        cy.xpath("//span[contains(.,'Validate')]").click()
+        cy.wait(1000)
+        cy.xpath("//span[contains(.,'Apply')]").click()
+        cy.wait(1000)
+    })
 
 
 
     })
-})
