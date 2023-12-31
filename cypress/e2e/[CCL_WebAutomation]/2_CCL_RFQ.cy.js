@@ -12,16 +12,16 @@ describe("RFQ", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Request For Quotation')]").click() 
         cy.wait(1000)
-        cy.xpath("//button[contains(.,'New')]").click()         //New 
-        cy.get("#purchase_request_ids").type('PR/0000').type('{Enter}')
+        cy.xpath("(//button[contains(.,'New')])[2]").click()         //New 
+        cy.get("#purchase_request_ids_0").type('PR/0000').type('{Enter}')
 
         cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:first-child>td:nth-child(7)").type('100')
         cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:nth-child(2)>td:nth-child(7)").type('80')
+        cy.wait(1000)
         cy.xpath("//span[contains(.,'Confirm')]").click()
+        cy.wait(1000)
         cy.xpath("//span[contains(.,'Go-back')]").should('have.text', 'Go-back')
-
-
-
+        //cy.wait(20000)
 
     })
 })

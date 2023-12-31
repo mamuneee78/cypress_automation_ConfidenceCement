@@ -14,15 +14,15 @@ describe("Quotation", function(){
         cy.xpath("//a[contains(.,'Request For Quotation')]").click()  //Purchase
         cy.wait(1000)
     for (let i = 0; i < 1; i++) {       //Repeat run the test 
-        cy.xpath("//button[contains(.,'New')]").click()         //New 
-        cy.get("#purchase_request_ids").type('PR/0000').type('{Enter}')   // PR select
+        cy.xpath("(//button[contains(.,'New')])[2]").click()         //New 
+        cy.get("#purchase_request_ids_0").type('PR/0000').type('{Enter}')   // PR select
         //Unit price
         cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:first-child>td:nth-child(7)").type('100')
         cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:nth-child(2)>td:nth-child(7)").type('95')
         cy.xpath("//span[contains(.,'Confirm')]").click() //Confirm or Approval
         cy.xpath("//span[contains(.,'Go-back')]").should('have.text', 'Go-back')    //Assertion
         cy.xpath("(//span[contains(.,'Quotation')])[1]").click()          //Qoutation button
-        cy.get("#partner_ids").type('A & Brothers').type('{Enter}')         //Vendor select
+        cy.get("#partner_ids_0").type('A & Brothers').type('{Enter}')         //Vendor select
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Create Quotation')]").should('have.text', 'Create Quotation')   //assertion
         cy.wait(2000)

@@ -15,17 +15,17 @@ describe("Quotation", function(){
         cy.wait(1000)
         for (let i = 0; i < 2; i++) {       //Repeat run the test 
         cy.wait(1000)
-        cy.xpath("//button[contains(.,'New')]").click()         //New 
+        cy.xpath("(//button[contains(.,'New')])[2]").click()         //New 
         cy.wait(2000)
         cy.xpath("//label[@class='form-check-label o_form_label'][contains(.,'Request For Quotation')]").click()
         cy.wait(1000)
         //cy.xpath("//label[@class='form-check-label o_form_label'][contains(.,'Request For Quotation')]").should('be.checked');
-        cy.get("#rfq_id").type('RFQ/000').type('{Enter}')
+        cy.get("#rfq_id_0").type('RFQ/000').type('{Enter}')
         cy.wait(1000)
-        cy.get("#quotation_id").type('Q/000').type('{Enter}')
+        cy.get("#quotation_id_0").type('Q/000').type('{Enter}')
         cy.wait(1000)  
-        cy.get("#subject").type('Test Subject')  
-        cy.get("#body").type('Test body')  
+        cy.get("#subject_0").type('Test Subject')  
+        cy.get("#body_0").type('Test body')  
         cy.xpath("//span[contains(.,'Submit to Layer-1')]").should('have.text', 'Submit to Layer-1')
         cy.xpath("//span[contains(.,'Submit to Layer-1')]").click()
         cy.wait(1000) 
