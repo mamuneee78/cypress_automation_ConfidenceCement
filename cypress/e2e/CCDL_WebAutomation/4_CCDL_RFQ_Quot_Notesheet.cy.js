@@ -16,14 +16,17 @@ describe("RFQ Quot NS", function(){
         cy.xpath("(//span[contains(.,'Orders')])[1]").click()            //Orders
         cy.xpath("(//a[contains(.,'Request For Quotations')])[1]").click()   //orders menu
         cy.wait(2000)
+        cy.xpath("//button[contains(.,'Create')]").click()
         cy.xpath("//button[@class='btn btn-primary o_list_button_add']").click()                 //purchase rep
         cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[2]").click().type('{Enter}') //purchase req
         cy.get('.o_form_buttons_edit > .btn-primary').click()               
         cy.xpath("//span[contains(.,'RFQ-Vendor')]").click()                //RFQ ventor button
         cy.wait(1000)
         cy.xpath("(//input[@type='text'])[1]").click().type('{Enter}')     //vendor1 select
+        cy.xpath("(//input[@type='text'])[1]").type('{Enter}') 
         cy.wait(1000)
         cy.xpath("(//input[@type='text'])[1]").click().type('{Enter}')     //vendor2 select
+        cy.xpath("(//input[@type='text'])[1]").type('{Enter}') 
         cy.wait(2000)
         cy.xpath("//span[contains(.,'Save')]").click()                     // save
         cy.wait(1000)

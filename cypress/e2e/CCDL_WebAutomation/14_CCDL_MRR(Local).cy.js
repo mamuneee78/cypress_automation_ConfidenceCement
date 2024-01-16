@@ -34,13 +34,14 @@ describe("MRR Local", function(){
         cy.wait(1000)
         cy.xpath("//button[contains(.,'Save')]").click()      
         cy.wait(1000)
-        cy.xpath("//span[contains(.,'MRR Review')]").click()        
-        cy.wait(1000)
+        cy.xpath("//span[contains(.,'Send To Approver')]").click()          
+        cy.wait(2000)
         cy.xpath("//span[contains(.,'MRR Approve')]").click()
+        cy.xpath("//span[contains(.,'MRR Approve')]").should('have.text', 'MRR Approve')
         cy.wait(1000)
         cy.xpath("//button[contains(.,'Cancel Approved')]").should('have.text', 'Cancel Approved')
         cy.wait(1000)
-
+        
 
 
     })

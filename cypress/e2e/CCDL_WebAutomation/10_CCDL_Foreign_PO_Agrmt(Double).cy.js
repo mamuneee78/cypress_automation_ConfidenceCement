@@ -37,13 +37,13 @@ describe("CASH PO", function(){
         
         cy.xpath("//select[@name='purchase_base']").select('Agreement & Notesheet')  //Purchase base
         cy.wait(1000)
-        cy.xpath("(//input[@autocomplete='off'])[3]").type('CCDL/2023/PR0')   //PR no
+        cy.xpath("(//input[@autocomplete='off'])[3]").type('CCDL/')   //PR no
         cy.wait(1000)
         cy.xpath("(//input[@autocomplete='off'])[3]").type('{Enter}')   //PR no
         cy.wait(1000)
         cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[4]").type('A & Company')    //vendor select
         cy.wait(1000)
-        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[5]").click().type('Test Agrmt')   //agreement no
+        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[5]").click().type('NewTest')   //agreement no
         cy.wait(1000)
         cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[7]").type('Main plant')   //Cost Head
         cy.wait(1000)

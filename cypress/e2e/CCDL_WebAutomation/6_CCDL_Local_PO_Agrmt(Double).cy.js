@@ -42,7 +42,7 @@ describe("CASH PO", function(){
         cy.wait(1000)
         cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[5]").type('A & Company')    //vendor select
         cy.wait(1000)
-        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[6]").click().type('Test Agrmt')   //agreement no
+        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[6]").click().type('NewTest')   //agreement no  Test Agrmt
         cy.wait(1000)
         cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[7]").type('Main plant')   //Cost Head
         cy.wait(1000)

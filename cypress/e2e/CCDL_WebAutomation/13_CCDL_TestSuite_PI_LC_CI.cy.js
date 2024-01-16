@@ -32,7 +32,8 @@ describe('Test suit', ()=> {
        cy.wait(1000)
        cy.xpath("(//input[@autocomplete='off'])[4]").type('Foreign')
        cy.wait(1000)
-       cy.xpath("(//input[@autocomplete='off'])[4]").type('{Enter}')   //FPO select
+       cy.xpath("(//input[@autocomplete='off'])[4]").click()   //FPO select
+       cy.xpath("(//input[@autocomplete='off'])[4]").type('{Enter}')
        cy.wait(1000)
        cy.xpath("(//input[@autocomplete='off'])[20]").type('BDT')
        cy.wait(1000)

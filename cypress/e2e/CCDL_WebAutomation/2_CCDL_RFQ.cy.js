@@ -23,7 +23,8 @@ describe("RFQ Creation", function(){
         cy.xpath("(//a[contains(.,'Request For Quotations')])[1]").click() //RFQ 
         cy.wait(2000)
         cy.xpath("//button[@class='btn btn-primary o_list_button_add']").click() //create RFQ
-        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[2]").click().type('{Enter}') //PR no select
+        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[2]").click() //PR no select
+        cy.xpath("(//input[@class='o_input ui-autocomplete-input'])[2]").type('{Enter}')
         cy.get('.o_form_buttons_edit > .btn-primary').click()     //save RFQ
         
         

@@ -21,7 +21,7 @@ describe("PR Creation", function(){
         cy.wait(1000)
         cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
         cy.wait(1000)
-        for (let i = 0; i < 3; i++) {       //Repeat run the test 
+        for (let i = 0; i < 2; i++) {       //Repeat run the test 
         cy.xpath("//button[contains(.,'Create')]").click()     //create
         cy.wait(1000)
         cy.xpath("//div[@name='budget_line_id']//input").click().type('{enter}')   //budget line1
@@ -45,7 +45,7 @@ describe("PR Creation", function(){
         // cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:nth-child(3)").type('2')
                 
                             //WeightScale products
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('MT_Testing') //fly ash(WS)// A4 paper ( 80)
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('A4 paper ( 80)') //fly ash(WS)// A4 paper ( 80)
         cy.wait(1000)
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:first-child>td:first-child").type('{Enter}')
         cy.get('[data-name="product_id"]').click()
@@ -61,7 +61,7 @@ describe("PR Creation", function(){
         
                           //WeightScale products
         cy.wait(1000)
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:first-child").type('clinker(ws)').type('{enter}')  //Ounce_Product clinker(ws), MT_Testing
+        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:first-child").type('1st Class Bricks').type('{enter}')  //Ounce_Product clinker(ws), MT_Testing, 1st Class Bricks
         cy.wait(1000)
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(3)").type('100')
         cy.xpath("//button[contains(.,'Save')]").click()

@@ -40,13 +40,17 @@ describe("CASH PO", function(){
          cy.wait(1000)
         cy.xpath("(//input[@autocomplete='off'])[7]").type('Data Migration')   //gm User
         cy.wait(1000)
-        cy.xpath("(//input[@autocomplete='off'])[3]").click().type('{Enter}')   //PR no
+        cy.xpath("(//input[@autocomplete='off'])[3]").click()   //PR no
         cy.wait(1000)
-        cy.xpath("(//input[@autocomplete='off'])[4]").click().type('{Enter}')   //Cost Head
+        cy.xpath("(//input[@autocomplete='off'])[3]").type('{Enter}')
+        cy.wait(1000)
+        cy.xpath("(//input[@autocomplete='off'])[4]").click()   //Cost Head
+        cy.wait(1000)
+        cy.xpath("(//input[@autocomplete='off'])[4]").type('{Enter}')
         cy.wait(1000)
         cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(1)>td:nth-child(10)").type('20')
         cy.xpath("//a[contains(.,'Products')]").click()
-        cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(10)").type('15')
+        //cy.get("table[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_section_and_note_list_view']>tbody>tr:nth-child(2)>td:nth-child(10)").type('15')
         cy.get('.o_form_buttons_edit > .btn-primary').click()     //save site PO
         cy.xpath("//span[contains(.,'Request Approval')]").click()
         cy.wait(1000)

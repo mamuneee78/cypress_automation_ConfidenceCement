@@ -26,7 +26,10 @@ describe("Materials Requisition", function(){
         cy.wait(1000)
         cy.xpath("//button[contains(.,'Create')]").click()         //New 
         cy.wait(1000)
-        cy.xpath("(//input[@autocomplete='off'])[1]").click().type('{Enter}')  //Approver select
+        //cy.xpath("(//input[@autocomplete='off'])[1]").click().type('{Enter}')  //Approver select
+        cy.xpath("(//input[@autocomplete='off'])[1]").type('Data')  //Approver select
+        cy.wait(1000)
+        cy.xpath("(//input[@autocomplete='off'])[1]").type('{Enter}') 
         cy.wait(1000)
         cy.xpath("(//input[@autocomplete='off'])[4]").type('02/01/2024 00:00:00')       //date pick
         cy.wait(1000)
@@ -41,7 +44,7 @@ describe("Materials Requisition", function(){
         // cy.wait(1000)
         cy.xpath("//a[contains(.,'Add a line')]").click()      // add a line 1
         cy.wait(1000)   //product1
-        cy.get("[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(1)>td:nth-child(1)").type('fly ash(WS)')
+        cy.get("[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(1)>td:nth-child(1)").type('A4 paper ( 80)')  // A4 paper ( 80), clinker(ws)
         cy.wait(1000)
         cy.get("[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(1)>td:nth-child(1)").type('{Enter}')
         //Cost Head
@@ -53,7 +56,7 @@ describe("Materials Requisition", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Add a line')]").click()      // add a line 2
         cy.wait(1000)
-        cy.get("[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(1)").type('clinker(ws)')
+        cy.get("[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(1)").type('1st Class Bricks')//fly ash(WS),1st Class Bricks
         cy.wait(1000)
         cy.get("[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(1)").type('{Enter}')
         cy.get("[class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']>tbody>tr:nth-child(2)>td:nth-child(3)").click()
@@ -64,6 +67,7 @@ describe("Materials Requisition", function(){
          cy.wait(1000)
          cy.xpath("//span[contains(.,'Reviewed')]").click()
         cy.wait(1000)
+
         cy.xpath("(//span[contains(.,'Approve')])[1]").click()
 
 

@@ -17,14 +17,14 @@ describe("Material Issue Return", function(){
         cy.wait(2000)
         cy.xpath("//button[contains(.,'Create')]").click()          //New 
         cy.wait(1000)
-        cy.xpath("(//input[@autocomplete='off'])[1]").type('CCDL/2023/MI')      //MI select
+        cy.xpath("(//input[@autocomplete='off'])[1]").type('CCDL/')      //MI select
         cy.wait(1000)
         cy.xpath("(//input[@autocomplete='off'])[1]").type('{Enter}')
         cy.wait(1000)
         cy.xpath("//button[contains(.,'Save')]").click() 
         cy.xpath("//span[contains(.,'Review')]").click()
         cy.wait(1000)
-        cy.xpath("//span[contains(.,'Approve')]").click()
+        cy.get('[name="button_approved"] > span').click()
         cy.wait(1000)
 
 

@@ -19,19 +19,19 @@ describe("MRR Local", function(){
         cy.wait(1000)
         cy.get("#purchase_order_id").type('{Enter}')   //PO id select
         cy.wait(1000)
-        cy.xpath("//span[contains(.,'Send For Review')]").click()        
+        cy.xpath("//span[contains(.,'Send To Approver')]").click()        
         cy.wait(1000)
         cy.xpath("//button[contains(.,'Ok')]").click()
         cy.wait(1000)
-        cy.xpath("//span[contains(.,'Reviewed')]").should('have.text', 'Reviewed')
-        cy.xpath("//span[contains(.,'Reviewed')]").click()        
+        cy.xpath("//span[contains(.,'MRR Approve')]").should('have.text', 'MRR Approve')
+        cy.xpath("//span[contains(.,'MRR Approve')]").click()        
         cy.wait(1000)
-        cy.xpath("//span[contains(.,'Validate')]").should('have.text', 'Validate')
-        cy.xpath("//span[contains(.,'Validate')]").click()        
-        cy.wait(1000)
-        cy.xpath("//span[contains(.,'Apply')]").click()
-        cy.wait(1000)
-        cy.xpath("//a[contains(.,'MRR')]").click()
+        // cy.xpath("//span[contains(.,'Send To Approver')]").should('have.text', 'MRR Approve')
+        // cy.xpath("//span[contains(.,'Validate')]").click()        
+        // cy.wait(1000)
+        // cy.xpath("//span[contains(.,'Apply')]").click()
+        // cy.wait(1000)
+        // cy.xpath("//a[contains(.,'MRR')]").click()
 
 
 
