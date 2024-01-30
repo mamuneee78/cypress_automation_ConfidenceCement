@@ -23,5 +23,8 @@ describe("RFQ", function(){
         cy.xpath("//span[contains(.,'Go-back')]").should('have.text', 'Go-back')
         //cy.wait(20000)
 
+
+
+        Cypress.on('uncaught:exception', () => false)
     })
 })

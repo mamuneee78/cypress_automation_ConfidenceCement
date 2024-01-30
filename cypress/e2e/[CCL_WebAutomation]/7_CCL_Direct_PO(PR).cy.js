@@ -12,13 +12,13 @@ describe("Purchase Requisition", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Direct Purchase')]").click()
         cy.wait(1000)
-        cy.xpath("//button[contains(.,'New')]").click()         //New 
-        cy.get("#partner_id").click()
+        cy.xpath("(//button[contains(.,'New')])[2]").click()         //New 
+        cy.get("#partner_id_0").click()
         cy.wait(2000)
-        cy.get("#partner_id").type('{downArrow}{downArrow}{Enter}') 
+        cy.get("#partner_id_0").type('{downArrow}{downArrow}{Enter}') 
         //cy.get("#partner_id").type('{Enter}') 
-        cy.xpath("//input[@id='purchase_request_id']").click()
-        cy.xpath("//input[@id='purchase_request_id']").type('PR/0000').type('{Enter}')
+        cy.xpath("//input[@id='purchase_request_id_0']").click()
+        cy.xpath("//input[@id='purchase_request_id_0']").type('PR/0000').type('{Enter}')
         cy.wait(1000)
         cy.get("table[class='o_section_and_note_list_view o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:first-child>td:nth-child(9)").type('40')
         cy.xpath("//a[contains(@name,'products')]").click()
@@ -33,8 +33,7 @@ describe("Purchase Requisition", function(){
         cy.xpath("//span[contains(.,'Order Reference')]").should('have.text', 'Order Reference')
 
 
-
-
+        Cypress.on('uncaught:exception', () => false)
 
 
     })

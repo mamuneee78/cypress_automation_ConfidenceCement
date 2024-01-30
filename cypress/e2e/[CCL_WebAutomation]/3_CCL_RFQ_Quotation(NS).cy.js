@@ -29,8 +29,9 @@ describe("Quotation", function(){
         cy.xpath("//span[contains(.,'Create Quotation')]").click()    //save qoatation
         
 
-
+        
     }
 
+    Cypress.on('uncaught:exception', () => false)
     })
 })

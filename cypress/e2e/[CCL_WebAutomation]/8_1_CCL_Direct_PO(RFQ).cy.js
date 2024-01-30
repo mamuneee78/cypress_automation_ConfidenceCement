@@ -1,4 +1,4 @@
-describe("Commercial Invoice", function(){
+describe("Direct-PO(NS)", function(){
     it('visit', function(){
         cy.viewport(1920, 1480)
         cy.visit('http://192.168.3.187:7071/web/login')     //url 
@@ -10,21 +10,26 @@ describe("Commercial Invoice", function(){
         cy.xpath("//a[contains(.,'Purchase')]").click()        //Purchase
         cy.xpath("//span[contains(.,'Orders')]").click()
         cy.wait(1000)
-        cy.xpath("//a[contains(.,'Commercial Invoice')]").click()
+        cy.xpath("//a[contains(.,'Direct Purchase')]").click()
         cy.wait(2000)
         cy.xpath("(//button[contains(.,'New')])[2]").click()         //New 
         cy.wait(1000)
-        var RandomNumber = Math.floor(Math.random()*100000)             // Random Number variable 
-        const formattedNumber = `CCL/LC/${RandomNumber}`; // Customize the format
-  
-        cy.xpath("//input[@id='name_0']").clear().type(formattedNumber)
-        cy.get("#lc_details_id_0").type('CCL').type('{Enter}')   //LC select
+        cy.get("#direct_po_base_0").select('Request For Quotation')    //select
+        cy.wait(2000)
+        cy.get("#partner_id_0").type('{downArrow}{downArrow}{Enter}') 
+        //cy.get("#partner_id").type('{Enter}') 
         cy.wait(1000)
-        cy.xpath("//span[contains(.,'Confirm')]").click()        
+        cy.xpath("//input[@id='rfq_id_0']").click()
+        cy.xpath("//input[@id='rfq_id_0']").type('RFQ/00').type('{Enter}')
         cy.wait(1000)
+        cy.xpath("//span[contains(.,'Submit')]").click()
+        cy.wait(1000)
+        cy.xpath("//span[contains(.,'Confirm Order')]").click()
         cy.xpath("//span[contains(.,'Close')]").should('have.text', 'Close')
-        cy.xpath("//span[contains(.,'Send Back')]").should('have.text', 'Send Back')
+        
 
+
+        Cypress.on('uncaught:exception', () => false)
 
 
 

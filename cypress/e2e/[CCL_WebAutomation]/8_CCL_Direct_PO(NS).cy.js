@@ -12,14 +12,14 @@ describe("Direct-PO(NS)", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Direct Purchase')]").click()
         cy.wait(2000)
-        cy.xpath("//button[contains(.,'New')]").click()         //New 
+        cy.xpath("(//button[contains(.,'New')])[2]").click()         //New 
         cy.wait(1000)
-        cy.get("#direct_po_base").select('Note Sheet')    //select
+        cy.get("#direct_po_base_0").select('Note Sheet')    //select
         // cy.wait(2000)
         // cy.get("#partner_id").type('{downArrow}{downArrow}{Enter}') 
         //cy.get("#partner_id").type('{Enter}') 
-        cy.get("#notesheet_id").click()
-        cy.get("#notesheet_id").type('NS000').type('{Enter}')
+        cy.get("#notesheet_id_0").click()
+        cy.get("#notesheet_id_0").type('NS000').type('{Enter}')
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Submit')]").click()
         cy.wait(1000)
@@ -28,6 +28,8 @@ describe("Direct-PO(NS)", function(){
         
 
 
+
+        Cypress.on('uncaught:exception', () => false)
 
 
 

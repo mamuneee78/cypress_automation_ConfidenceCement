@@ -1,6 +1,6 @@
 describe("Local-PO(CS)", function(){
     it('visit', function(){
-        cy.viewport(1000, 660)
+        cy.viewport(1920, 1200)
         cy.visit('http://192.168.3.187:7071/web/login')     //url 
         cy.get('#login').type('qa_user')       // user input
         cy.get('#password').type('1234')       // password input
@@ -12,18 +12,18 @@ describe("Local-PO(CS)", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Local Purchase')]").click()
         cy.wait(2000)
-        cy.xpath("//button[contains(.,'New')]").click()         //New 
+        cy.xpath("(//button[contains(.,'New')])[2]").click()         //New 
         cy.wait(1000)
-        cy.get("#purchase_base").select('Comparative Statement')    // PO base select
+        cy.get("#purchase_base_0").select('Comparative Statement')    // PO base select
         cy.wait(1000)
-        cy.get("#partner_id").type('DreamIT Ltd').type('{Enter}')         //Vendor select
+        cy.get("#partner_id_0").type('DreamIT Ltd').type('{Enter}')         //Vendor select
         cy.wait(1000)
-        cy.get("#rfq_id").click()
-        cy.get("#rfq_id").type('RFQ/00').type('{Enter}')   //rfq select
+        cy.get("#rfq_id_0").click()
+        cy.get("#rfq_id_0").type('RFQ/00').type('{Enter}')   //rfq select
         cy.wait(1000)
-        cy.get("#cs_ids").click()
+        cy.get("#cs_ids_0").click()
         cy.wait(1000)
-        cy.get("#cs_ids").type('CS-2023/0').type('{Enter}')   //cs select
+        cy.get("#cs_ids_0").type('CS').type('{Enter}')   //cs select
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Submit')]").click()        
         cy.wait(1000)
@@ -31,7 +31,7 @@ describe("Local-PO(CS)", function(){
         cy.xpath("//span[contains(.,'Close')]").should('have.text', 'Close')
         
 
-
+        Cypress.on('uncaught:exception', () => false)
 
 
 

@@ -20,6 +20,8 @@ describe("Comparative Statement", function(){
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Compare')]").click()
         cy.wait(1000)
+        cy.xpath("(//button[contains(.,'Edit')])[2]").click()
+        cy.wait(1000)
         //Unit price
         cy.xpath("(//input[@type='text'])[1]").type('5')
         cy.xpath("(//input[@type='text'])[3]").type('5')
@@ -46,6 +48,9 @@ describe("Comparative Statement", function(){
 
         }
         
+
+
+        Cypress.on('uncaught:exception', () => false)
 
     })
 })

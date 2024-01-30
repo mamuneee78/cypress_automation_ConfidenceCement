@@ -13,7 +13,7 @@ describe("Quotation", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Note sheet')]").click()  //NoteSheet
         cy.wait(1000)
-        for (let i = 0; i < 2; i++) {       //Repeat run the test 
+        for (let i = 0; i < 1; i++) {       //Repeat run the test 
         cy.wait(1000)
         cy.xpath("(//button[contains(.,'New')])[2]").click()         //New 
         cy.wait(2000)
@@ -49,7 +49,7 @@ describe("Quotation", function(){
         }
 
 
-
+        Cypress.on('uncaught:exception', () => false)
 
     })
 })

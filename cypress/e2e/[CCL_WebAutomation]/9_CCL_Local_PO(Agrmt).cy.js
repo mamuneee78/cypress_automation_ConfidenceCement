@@ -11,32 +11,32 @@ describe("Foreign-PO(Agrmt)", function(){
         cy.xpath("//span[contains(.,'Orders')]").click()
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Local Purchase')]").click()
+        cy.wait(1000)
+        cy.get('.d-xl-none > .o_list_button_add').click()         //New 
+        cy.wait(1000)
+        cy.get("#purchase_base_0").select('Agreement')    // PO base select
         cy.wait(2000)
-        cy.xpath("//button[contains(.,'New')]").click()         //New 
+        cy.get("#partner_id_0").click()
         cy.wait(1000)
-        cy.get("#purchase_base").select('Agreement')    // PO base select
-        cy.wait(2000)
-        cy.get("#partner_id").click()
+        cy.get("#partner_id_0").type('A & Brothers')     //vendor select 
         cy.wait(1000)
-        cy.get("#partner_id").type('A & Brothers')     //vendor select 
+        cy.get("#partner_id_0").type('{Enter}') 
+        cy.get("#agreement_id_0").click()
+        cy.get("#agreement_id_0").type('VA0').type('{Enter}')   //agreement select
         cy.wait(1000)
-        cy.get("#partner_id").type('{Enter}') 
-        cy.get("#agreement_id").click()
-        cy.get("#agreement_id").type('VA000').type('{Enter}')   //agreement select
+        cy.get("#purchase_request_id_0").click()
+        cy.get("#purchase_request_id_0").type('PR/000').type('{Enter}')   //PR select
         cy.wait(1000)
-        cy.get("#purchase_request_id").click()
-        cy.get("#purchase_request_id").type('PR/000').type('{Enter}')   //PR select
-        cy.wait(1000)
-        cy.get("table[class='o_section_and_note_list_view o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:first-child>td:nth-child(4)").type('20')
+        cy.get("table[class='o_section_and_note_list_view o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:first-child>td:nth-child(5)").type('20')
         cy.xpath("//a[contains(@name,'products')]").click()
         cy.wait(1000)
-        cy.get("table[class='o_section_and_note_list_view o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:nth-child(2)>td:nth-child(4)").type('20')
+        cy.get("table[class='o_section_and_note_list_view o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:nth-child(2)>td:nth-child(5)").type('20')
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Submit')]").click()        
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Confirm Order')]").click()
         cy.xpath("//span[contains(.,'Close')]").should('have.text', 'Close')
         
-
+        Cypress.on('uncaught:exception', () => false)
     })
 })

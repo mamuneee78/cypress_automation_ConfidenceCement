@@ -12,12 +12,12 @@ describe("Forein-PO(NS)", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Foreign Purchase')]").click()
         cy.wait(2000)
-        cy.xpath("//button[contains(.,'New')]").click()         //New 
+        cy.xpath("(//button[contains(.,'New')])[2]").click()         //New 
         cy.wait(1000)
-        cy.get("#purchase_base").select('Notesheet')    // PO base select
+        cy.get("#purchase_base_0").select('Notesheet')    // PO base select
         cy.wait(2000)
-        cy.get("#notesheet_id").click()
-        cy.get("#notesheet_id").type('NS000').type('{Enter}')   //Notesheet select
+        cy.get("#notesheet_id_0").click()
+        cy.get("#notesheet_id_0").type('NS').type('{Enter}')   //Notesheet select
         cy.wait(1000)
         cy.xpath("//span[contains(.,'Submit')]").click()        
         cy.wait(1000)

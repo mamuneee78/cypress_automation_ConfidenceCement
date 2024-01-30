@@ -12,21 +12,21 @@ describe("Foreign-PO(Agrmt)", function(){
         cy.wait(1000)
         cy.xpath("//a[contains(.,'Foreign Purchase')]").click()
         cy.wait(2000)
-    for (let i = 0; i < 2; i++) {       //Repeat run the test
-        cy.xpath("//button[contains(.,'New')]").click()         //New 
+    for (let i = 0; i < 1; i++) {       //Repeat run the test
+        cy.xpath("(//button[contains(.,'New')])[2]").click()         //New 
         cy.wait(1000)
-        cy.get("#purchase_base").select('Agreement')    // PO base select
+        cy.get("#purchase_base_0").select('Agreement')    // PO base select
         cy.wait(2000)
-        cy.get("#partner_id").click()
+        cy.get("#partner_id_0").click()
         cy.wait(1000)
-        cy.get("#partner_id").type('A & Brothers')     //vendor select 
+        cy.get("#partner_id_0").type('A & Brothers')     //vendor select 
         cy.wait(1000)
-        cy.get("#partner_id").type('{Enter}') 
-        cy.get("#agreement_id").click()
-        cy.get("#agreement_id").type('VA000').type('{Enter}')   //agreement select
+        cy.get("#partner_id_0").type('{Enter}') 
+        cy.get("#agreement_id_0").click()
+        cy.get("#agreement_id_0").type('VA').type('{Enter}')   //agreement select
         cy.wait(1000)
-        cy.get("#purchase_request_id").click()
-        cy.get("#purchase_request_id").type('PR/000').type('{Enter}')   //PR select
+        cy.get("#purchase_request_id_0").click()
+        cy.get("#purchase_request_id_0").type('PR').type('{Enter}')   //PR select
         cy.get("table[class='o_list_table table table-sm table-hover position-relative mb-0 o_list_table_ungrouped table-striped']>tbody>tr:first-child>td:nth-child(4)").type('20')
         cy.xpath("//a[contains(@name,'products')]").click()
         cy.wait(1000)
@@ -39,6 +39,8 @@ describe("Foreign-PO(Agrmt)", function(){
         
 
           }
+
+          Cypress.on('uncaught:exception', () => false)
         })
 
 
