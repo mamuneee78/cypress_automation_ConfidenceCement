@@ -1,4 +1,5 @@
 const URL = require('./Login_URL.json')
+const User = require('./UserListCCDL.json')
 describe("PR Creation", function(){
 
     it("visit", function(){
@@ -12,7 +13,7 @@ describe("PR Creation", function(){
         
         //Prestage credential
         //cy.get('#login').type('data_migration')       // user input
-        cy.get('#login').type('data_migration')       // user input
+        cy.get('#login').type(User.Initiator)       // user input
         cy.get('#password').type('1234')       // password input 
         // cy.wait(2000)
         cy.get('.btn').click()                // loggin button click
@@ -73,19 +74,63 @@ describe("PR Creation", function(){
         //cy.screenshot()
         cy.xpath("//span[contains(.,'Send To HOD')]").should('have.text', 'Send To HOD')  //send to hod
         cy.wait(2000)
-        //cy.screenshot()
+        cy.xpath("//img[contains(@alt,'User')]").click()
+        cy.wait(1000)
+        cy.xpath("//a[contains(.,'Log out')]").click()
+        cy.wait(1000)
+        cy.get('#login').type(User.HOD)       // user input
+        cy.get('#password').type('1234')       // password input 
+        // cy.wait(2000)
+        cy.get('.btn').click()                // loggin button click
+        cy.wait(2000)
+        cy.xpath("//button[contains(@title,'Home Menu')]").click()           //menu bar
+        cy.wait(1000)
+        cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
+        cy.wait(1000)
+        cy.xpath("(//tr[contains(@class,'o_data_row')])[1]").click()
         cy.xpath("(//span[contains(.,'Request Approval')])[3]").click()
         cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval')  // hod to gm
-        cy.wait(2000)
+        cy.wait(1000)
         //cy.screenshot()
-        cy.get('[name="button_gm_approve"] > span').click()
-        cy.xpath("(//span[contains(.,'Request Approval')])[3]").should('have.text', 'Request Approval') //gm to scm
+        cy.xpath("//img[contains(@alt,'User')]").click()
+        cy.wait(1000)
+        cy.xpath("//a[contains(.,'Log out')]").click()
+        cy.wait(1000)
+        cy.get('#login').type(User.GM)       // user input
+        cy.get('#password').type('1234')       // password input 
+        // cy.wait(2000)
+        cy.get('.btn').click()                // loggin button click
         cy.wait(2000)
+        cy.xpath("//button[contains(@title,'Home Menu')]").click()           //menu bar
+        cy.wait(1000)
+        cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
+        cy.wait(1000)
+        cy.xpath("(//tr[contains(@class,'o_data_row')])[1]").click()
+        cy.wait(1000)
+        cy.xpath("(//span[contains(.,'Request Approval')])[1]").click()
+        cy.xpath("(//span[contains(.,'Request Approval')])[1]").should('have.text', 'Request Approval')  // hod to gm
+        cy.wait(1000)
         //cy.screenshot()
+        cy.xpath("//img[contains(@alt,'User')]").click()
+        cy.wait(1000)
+        cy.xpath("//a[contains(.,'Log out')]").click()
+        cy.wait(1000)
+        cy.get('#login').type(User.SCM)       // user input
+        cy.get('#password').type('1234')       // password input 
+        // cy.wait(2000)
+        cy.get('.btn').click()                // loggin button click
+        cy.wait(2000)
+        cy.xpath("//button[contains(@title,'Home Menu')]").click()           //menu bar
+        cy.wait(1000)
+        cy.get('.o-dropdown--menu > [href="#menu_id=210&action=413"]').click()   // PR
+        cy.wait(1000)
+        cy.xpath("(//tr[contains(@class,'o_data_row')])[1]").click()
+        cy.wait(1000)
         cy.xpath("(//span[contains(.,'Approve')])[3]").click()           //scm approved 
         cy.xpath("(//span[contains(.,'Approve')])[3]").should('have.text', 'Approve')
         cy.wait(2000)
         cy.xpath("//span[contains(.,'Send for Amendment')]").should('have.text', 'Send for Amendment')
+        cy.xpath("//span[contains(.,'Final Cancel')]").should('have.text', 'Final Cancel')
         //cy.screenshot()
 
         }

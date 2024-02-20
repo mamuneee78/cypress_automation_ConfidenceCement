@@ -1,8 +1,10 @@
+const User = require('./UsersCridential.json')
+
 describe("RFQ", function(){
     it('visit', function(){
         cy.viewport(1920, 1200)
         cy.visit('http://192.168.3.187:7071/web/login')     //url 
-        cy.get('#login').type('qa_user')       // user input
+        cy.get('#login').type(User.SCM_Initiator)       // user input
         cy.get('#password').type('1234')       // password input
         cy.get('.btn').click()                // loggin button click
         cy.wait(1000)

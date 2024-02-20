@@ -1,0 +1,16 @@
+{
+    "PR_Initiator": "init.user",
+    "HOD": "hod.user",
+    "GM": "gm.user",
+    "SCM_Initiator": "scm.user",
+    "Layer1": "l1.user",
+    "Layer2": "l2.user",
+    "SCM_HOD": "shod.user",
+    "MD": "md.user",
+    "Commercial": "com.user",
+
+    "MRR Initiator": "mrrin.user",
+    "MRR Reviewer": "mrrre.user",
+    "MRR Approver": "mrrap.user"
+
+}
